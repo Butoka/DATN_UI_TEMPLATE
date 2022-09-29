@@ -47,22 +47,38 @@
             <!-- LogIn Page Start -->
             <!-- Returning Customer Start -->
             <div class="col-3"></div>
-                <div class="col-md-6">
+                <div class="col-md-6 bg-light p-5">
                     <div class="well">
                         <div class="return-customer">
                             <center><h3 class="mb-10 custom-title">ĐĂNG NHẬP</h3></center>                           
                             <form class="form-login" action="#">
                                 <div class="form-group">
-                                    <label>Tên đăng nhập</label>
+                                    <label><span class="require">*</span> Tên đăng nhập</label>
                                     <input type="text" name="username" placeholder="Tên đăng nhập" id="input-email" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Mật khẩu</label>
-                                    <input type="text" name="pass" placeholder="Mật khẩu" id="input-password" class="form-control">
+                                    <label><span class="require">*</span> Mật khẩu</label>
+                                    <input type="password" name="pass" placeholder="Mật khẩu" id="input-password" class="form-control">
                                 </div>
-                                <a href="forgot-password.html" class="nav-item nav-link">Quên mật khẩu?</a>
-                                <input type="submit" value="Đăng nhập" class="btn btn-block btn-primary font-weight-bold my-3 py-3">
-                                <input type="submit"  value="Tài khoản Google" class="btn btn-block btn-primary font-weight-bold my-3 py-3">
+                                <div class="row">
+                                    <a href="forgot_pass.html" class="col-9">Quên mật khẩu?</a>
+                                    <a href="register.html" class="col-3 text-right">Tạo tài khoản</a>
+                                </div>
+                               
+                               <button class="btn btn-primary w-100 btn-sm mt-3">
+                                    <h6 class="text-white pt-2 text-uppercase">Đăng nhập</h6>
+                                </button>
+                                <hr>
+                                <button class="btn btn-danger w-100 btn-sm mt-3">
+                                    <h6 class="text-white pt-2 text-uppercase">Đăng nhập với tài khoản Google
+                                        <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" class="ml-2 img-fluid rounded-circle" style="width:25px;background-color: white;">
+                                    </h6>
+                                </button>
+                                <button class="btn btn-dark w-100 btn-sm mt-1" style="background-color:blue;">
+                                    <h6 class="text-white pt-2 text-uppercase">Đăng nhập với tài khoản Facebook
+                                        <i class="fab fa-facebook h5 text-white ml-1"></i>
+                                    </h6>
+                                </button>
                             </form>
                         </div>
                     </div>
