@@ -9719,15 +9719,21 @@ a.text-dark:hover, a.text-dark:focus {
 .body-content .sign-in-page .sign-in .social-sign-in .facebook-sign-in:focus {
   background-color: #153470;
 } */
+.form-login label{
+  font-weight: bold;
 
+}
 .form-register label {
   text-align: left;
 }
 .form-register legend {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family:Times New Roman;
 }
 .form-register label {
   font-size: 13px;
+  font-weight: bold;
 }
 
 .form-register .form-group input {
@@ -9735,4 +9741,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .form-register legend {
   font-size: 16px;
+}
+.require{
+  color: red;
 }
