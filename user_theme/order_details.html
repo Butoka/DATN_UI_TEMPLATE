@@ -32,8 +32,8 @@
         <div class="row px-xl-5">
             <div class="col-12">
                 <nav class="breadcrumb bg-light mb-30">
-                    <a class="breadcrumb-item text-dark" href="#">Trang chủ</a>
-                    <a class="breadcrumb-item text-dark" href="#">Đơn hàng</a>
+                    <a class="breadcrumb-item text-dark" href="index.html">Trang chủ</a>
+                    <a class="breadcrumb-item text-dark" href="orders.html">Đơn hàng của bạn</a>
                     <span class="breadcrumb-item active">Chi tiết đơn hàng</span>
                 </nav>
             </div>
@@ -46,39 +46,48 @@
     <div class="container-fluid">
         <div class="row px-xl-5"> 
 
-            <div class="container">
+            <div class="container bg-light p-4">
+                <!-- Product item start -->
                 <div class="card">
-                    <div class="row no-gutters">
+                    <a href="detail.html" class="text-decoration-none">
+                        <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="img/product-1.jpg" alt="" height="200px" width="200px">
+                            <center><img src="img/product-1.jpg" alt="" height="200px" width="200px"></center>
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Xe đạp chà bá bự</h5>
-                                <p class="card-text">Phân loại hàng: màu: đen, size: XL.</p>
+                                <p class="card-text text-dark">Phân loại hàng: màu: đen, size: XL.</p>
                                 <p class="card-text"><small class="text-muted">X1</small></p>
                                 <p class="card-text" style="color: red;">100.000VND</p>
                             </div>
                         </div>
-                    </div>
+                    </div> 
+                    </a>
                 </div>
+                 <!-- Product item end-->
+                <hr>
+                  <!-- Product item start -->
                 <div class="card">
-                    <div class="row no-gutters">
+                    <a href="detail.html" class="text-decoration-none">
+                        <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="img/product-1.jpg" alt="" height="200px" width="200px">
+                            <center><img src="img/product-1.jpg" alt="" height="200px" width="200px"></center>
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Xe đạp chà bá bự số 2</h5>
-                                <p class="card-text">Phân loại hàng: màu: đen, size: XL.</p>
-                                <p class="card-text"><small class="text-muted">X2</small></p>
-                                <p class="card-text" style="color: red;">200.000VND</p>
+                                <h5 class="card-title">Xe đạp chà bá bự</h5>
+                                <p class="card-text text-dark">Phân loại hàng: màu: đen, size: XL.</p>
+                                <p class="card-text"><small class="text-muted">X1</small></p>
+                                <p class="card-text" style="color: red;">100.000VND</p>
                             </div>
                         </div>
-                    </div>
+                    </div> 
+                    </a>
                 </div>
-                <hr>
-                <h4>Chi tiết đơn hàng</h4>
+                 <!-- Product item end-->
+
+                <h4 class="mt-4">Chi tiết đơn hàng</h4>
 
                 <div class="d-flex justify-content-between pt-2">
                     <p class="text-muted mb-0">Họ tên người nhận : Huỳnh Văn Đạt</p>
@@ -101,11 +110,15 @@
 
          
                 <hr class="" style="background-color: #e0e0e0; opacity: 1;">
-                <h5 class="d-flex align-items-center justify-content-end text-danger mb-0">Tổng tiền:
-                    <span class="h5 mb-0 ms-2"> 300,000 VND</span>
+                <div class="row">
+                    <div class="col-6">
+                        <a href="index.html" class="btn btn-danger">Tiếp tục mua hàng...</a>
+                    </div>
+                    <div class="col-6 text-right">
+                        <h5 class="text-danger mb-0">Tổng tiền:
+                        <span class="h5 mb-0 ml-2">  300,000 VND</span>
+                    </div>
                 </h5>
-                <div class="justify-content-start">
-                    <a href="#" class="btn btn-danger">Trở về...</a>
                 </div>
             
             </div>
