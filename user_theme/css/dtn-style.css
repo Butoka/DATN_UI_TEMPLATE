@@ -109,12 +109,12 @@
 .cta-lptech li a {
     height: 50px;
     line-height: 50px;
-    background-color: #FFC400;
+    background-color: #ff6a00;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .cta-lptech li a.call {
-    background-color: rgb(81, 252, 93);
+    background-color: rgb(80, 243, 20);
 }
 
 .cta-lptech li a i {

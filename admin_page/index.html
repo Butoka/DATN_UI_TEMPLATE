@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Trang quản trị nhân viên| DTNsBike</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- site icon -->
+   <link rel="icon" href="logo/icon2.png" type="image/png" />
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <!-- site css -->
+   <link rel="stylesheet" href="style.css" />
+   <!-- responsive css -->
+   <link rel="stylesheet" href="css/responsive.css" />
+   <!-- color css -->
+   <link rel="stylesheet" href="css/color_2.css" />
+   <!-- select bootstrap -->
+   <link rel="stylesheet" href="css/bootstrap-select.css" />
+   <!-- scrollbar css -->
+   <link rel="stylesheet" href="css/perfect-scrollbar.css" />
+   <!-- custom css -->
+   <link rel="stylesheet" href="css/custom.css" />
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body class="dashboard dashboard_2">
+   <div class="full_container">
+      <div class="inner_container">
+         <!-- Sidebar  -->
+         <nav id="sidebar">
+            <div class="sidebar_blog_1">
+               <div class="sidebar-header">
+                  <div class="logo_section">
+                     <a href="index.html"><img class="logo_icon img-responsive" src="logo/icon2.png" alt="#" /></a>
+                  </div>
+               </div>
+               <div class="sidebar_user_info">
+                  <div class="icon_setting"></div>
+                  <div class="user_profle_side">
+                     <div class="user_img"><img class="img-responsive" src="images/layout_img/user_img.jpg" alt="#" />
+                     </div>
+                     <div class="user_info">
+                        <h6>DatLoa@123</h6>
+                        <p><span class="online_animation"></span> Online</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="sidebar_blog_2">
+               <h4 class="text-uppercase bg-success text-white">Hệ thống quản trị</h4>
+               <ul class="list-unstyled components">
+                  <!-- Menu item start-->
+                  <li><a href="index.html"><i class="fa fa-dashboard yellow_color"></i> <span>Bảng điều khiển</span></a>
+                  </li>
+                  <!-- Menu item end -->
+                  <!-- Menu item start-->
+                  <li class="active">
+                     <a href="#account-staff" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                           class="fa fa-user text-primary"></i> <span>Quản lý nhân viên</span></a>
+                     <ul class="collapse list-unstyled" id="account-staff">
+                        <li>
+                           <a href="staff-list.html">> <span>Danh sách nhân viên</span></a>
+                        </li>
+                        <li>
+                           <a href="staff-update.html">> <span>Cập nhật</span></a>
+                        </li>
+                     </ul>
+                  </li>
+                  <!-- Menu item start-->
+                  <li class="active">
+                     <a href="#account" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                           class="fa fa-users green_color"></i> <span>Quản lý khách hàng</span></a>
+                     <ul class="collapse list-unstyled" id="account">
+                        <li>
+                           <a href="#">> <span>Danh sách khách hàng</span></a>
+                        </li>
+                        <li>
+                           <a href="#">> <span>Cập nhật</span></a>
+                        </li>
+                     </ul>
+                  </li>
+                  <!-- Menu item start-->
+                  <li class="active">
+                     <a href="#product" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                           class="fa fa-inbox"></i> <span>Quản lý sản phẩm</span></a>
+                     <ul class="collapse list-unstyled" id="product">
+                        <li>
+                           <a href="#">> <span>Danh sách sản phẩm</span></a>
+                        </li>
+                        <li>
+                           <a href="#">> <span>Cập nhật</span></a>
+                        </li>
+                     </ul>
+                  </li>
+                  <!-- Menu item end -->
+                  <!-- Menu item start-->
+                  <li class="active">
+                     <a href="#category" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                           class="fa fa-navicon text-danger"></i> <span>Quản lý danh mục</span></a>
+                     <ul class="collapse list-unstyled" id="category">
+                        <li>
+                           <a href="#">> <span>Danh sách</span></a>
+                        </li>
+                        <li>
+                           <a href="#">> <span>Cập nhật</span></a>
+                        </li>
+                     </ul>
+                  </li>
+                  <!-- Menu item end -->
+                  <!-- Menu item start-->
+                  <li class="active">
+                     <a href="#color" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                           class="fa fa-paint-brush text-warning"></i> <span>Quản lý màu sắc</span></a>
+                     <ul class="collapse list-unstyled" id="color">
+                        <li>
+                           <a href="#">> <span>Danh sách</span></a>
+                        </li>
+                        <li>
+                           <a href="#">> <span>Cập nhật</span></a>
+                        </li>
+                     </ul>
+                  </li>
+                  <!-- Menu item end -->
+                  <!-- Menu item start-->
+                  <li class="active">
+                     <a href="#brand" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                           class="fa fa-star text-primary"></i> <span>Quản lý thương hiệu</span></a>
+                     <ul class="collapse list-unstyled" id="brand">
+                        <li>
+                           <a href="#">> <span>Danh sách</span></a>
+                        </li>
+                        <li>
+                           <a href="#">> <span>Cập nhật</span></a>
+                        </li>
+                     </ul>
+                  </li>
+                  <!-- Menu item end -->
+                  <!-- Menu item start-->
+                  <li class="active">
+                     <a href="#size" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                           class="fa fa-crop text-dark"></i> <span>Quản lý kích thước</span></a>
+                     <ul class="collapse list-unstyled" id="size">
+                        <li>
+                           <a href="#">> <span>Danh sách</span></a>
+                        </li>
+                        <li>
+                           <a href="#">> <span>Cập nhật</span></a>
+                        </li>
+                     </ul>
+                  </li>
+                  <!-- Menu item end -->
+                  <!-- Menu item start-->
+                  <li class="active">
+                     <a href="#services" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                           class="fa fa-archive text-success"></i> <span>Quản lý dịch vụ</span></a>
+                     <ul class="collapse list-unstyled" id="services">
+                        <li>
+                           <a href="#">> <span>Danh sách</span></a>
+                        </li>
+                        <li>
+                           <a href="#">> <span>Cập nhật</span></a>
+                        </li>
+                     </ul>
+                  </li>
+                  <!-- Menu item end -->
+                  <!-- Menu item start-->
+                  <li class="active">
+                     <a href="#orders" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                           class="fa fa-shopping-cart red_color"></i> <span>Đơn hàng</span></a>
+                     <ul class="collapse list-unstyled" id="orders">
+                        <li>
+                           <a href="#">> <span>Tất cả đơn hàng</span></a>
+                        </li>
+                        <li>
+                           <a href="#">> <span>Đã hủy</span></a>
+                        </li>
+                        <li>
+                           <a href="#">> <span>Trả hàng hoàn tiền</span></a>
+                        </li>
+                     </ul>
+                  </li>
+                  <!-- Menu item end -->
+
+                  <!-- Menu item start-->
+                  <li><a href="#"><i class="fa fa-bar-chart text-danger"></i> <span>Thống kê doanh thu</span></a></li>
+                  <!-- Menu item end -->
+
+               </ul>
+
+            </div>
+         </nav>
+         <!-- end sidebar -->
+         <!-- right content -->
+         <div id="content">
+            <!-- topbar -->
+            <div class="topbar">
+               <nav class="navbar navbar-expand-lg navbar-light">
+                  <div class="full">
+                     <button type="button" id="sidebarCollapse" class="sidebar_toggle bg-success"><i
+                           class="fa fa-bars"></i></button>
+                     <!-- <div class="logo_section">
+                        <a href="index.html"><img class="img-responsive" src="logo/icon2.png" alt="#" /></a>
+                     </div> -->
+                     <div class="right_topbar">
+                        <div class="icon_info">
+                           <ul>
+                              <li><a href="#"><i class="fa fa-bell-o"></i><span class="badge bg-success">2</span></a>
+                              </li>
+                              <li><a href="#"><i class="fa fa-question-circle"></i></a></li>
+                              <li><a href="#"><i class="fa fa-envelope-o"></i><span
+                                       class="badge bg-success">3</span></a></li>
+                           </ul>
+                           <ul class="user_profile_dd">
+                              <li class="bg-success">
+                                 <a class="dropdown-toggle" data-toggle="dropdown"><img
+                                       class="img-responsive rounded-circle" src="images/layout_img/user_img.jpg"
+                                       alt="#" /><span class="name_user ">DatLoa@123</span></a>
+                                 <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#"><span>Thông tin tài khoản</span></a>
+                                    <a class="dropdown-item" href="#"><span>Đăng xuất</span> <i
+                                          class="fa fa-sign-out"></i></a>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+            <!-- end topbar -->
+            <!-- dashboard inner -->
+            <div class="midde_cont">
+               <div class="container-fluid">
+                  <!-- Title -->
+                  <div class="row column_title">
+                     <div class="col-md-12">
+                        <div class="page_title">
+                           <h2>Dashboard</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <!-- Section Dashboard -->
+                     <div class="col-lg-6">
+                        <div class="row">
+                           <div class="col-md-6 col-lg-6">
+                              <div class="full socile_icons fb margin_bottom_30">
+                                 <div class="social_icon">
+                                    <i class="fa fa-facebook"></i>
+                                 </div>
+                                 <div class="social_cont">
+                                    <ul>
+                                       <li>
+                                          <span><strong>35k</strong></span>
+                                          <span>Friends</span>
+                                       </li>
+                                       <li>
+                                          <span><strong>128</strong></span>
+                                          <span>Feeds</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-lg-6">
+                              <div class="full socile_icons tw margin_bottom_30">
+                                 <div class="social_icon">
+                                    <i class="fa fa-twitter"></i>
+                                 </div>
+                                 <div class="social_cont">
+                                    <ul>
+                                       <li>
+                                          <span><strong>584k</strong></span>
+                                          <span>Followers</span>
+                                       </li>
+                                       <li>
+                                          <span><strong>978</strong></span>
+                                          <span>Tweets</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-lg-6">
+                              <div class="full socile_icons linked margin_bottom_30">
+                                 <div class="social_icon">
+                                    <i class="fa fa-linkedin"></i>
+                                 </div>
+                                 <div class="social_cont">
+                                    <ul>
+                                       <li>
+                                          <span><strong>758+</strong></span>
+                                          <span>Contacts</span>
+                                       </li>
+                                       <li>
+                                          <span><strong>365</strong></span>
+                                          <span>Feeds</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-lg-6">
+                              <div class="full socile_icons google_p margin_bottom_30">
+                                 <div class="social_icon">
+                                    <i class="fa fa-google-plus"></i>
+                                 </div>
+                                 <div class="social_cont">
+                                    <ul>
+                                       <li>
+                                          <span><strong>450</strong></span>
+                                          <span>Followers</span>
+                                       </li>
+                                       <li>
+                                          <span><strong>57</strong></span>
+                                          <span>Circles</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- table section -->
+                           <div class="col-md-12 col-lg-12">
+                              <div class="white_shd full margin_bottom_30">
+                                 <div class="full graph_head">
+                                    <div class="heading1 margin_0">
+                                       <h2>Basic Table</h2>
+                                    </div>
+                                 </div>
+                                 <div class="table_section p-4">
+                                    <div class="table-responsive">
+                                       <table class="mt-3 table table-bordered table-hover">
+                                          <thead>
+                                             <tr class="text-white" style="background-color: rgba(5, 168, 68, 0.877);">
+                                                <th>Firstname</th>
+                                                <th>Lastname</th>
+                                                <th>Email</th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td>John</td>
+                                                <td>Doe</td>
+                                                <td>john@example.com</td>
+                                             </tr>
+                                             <tr>
+                                                <td>Mary</td>
+                                                <td>Moe</td>
+                                                <td>mary@example.com</td>
+                                             </tr>
+                                             <tr>
+                                                <td>July</td>
+                                                <td>Dooley</td>
+                                                <td>july@example.com</td>
+                                             </tr>
+                                             <tr>
+                                                <td>Mary</td>
+                                                <td>Moe</td>
+                                                <td>mary@example.com</td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- table section -->
+                           <!-- table section -->
+                           <div class="col-md-12 col-lg-12">
+                              <div class="white_shd full margin_bottom_30">
+                                 <div class="full graph_head">
+                                    <div class="heading1 margin_0">
+                                       <h2>Basic Table</h2>
+                                    </div>
+                                 </div>
+                                 <div class="table_section p-4">
+                                    <div class="table-responsive">
+                                       <table class="mt-3 table table-bordered table-hover">
+                                          <thead>
+                                             <tr class="text-white" style="background-color: rgba(5, 168, 68, 0.877);">
+                                                <th>Firstname</th>
+                                                <th>Lastname</th>
+                                                <th>Email</th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td>John</td>
+                                                <td>Doe</td>
+                                                <td>john@example.com</td>
+                                             </tr>
+                                             <tr>
+                                                <td>Mary</td>
+                                                <td>Moe</td>
+                                                <td>mary@example.com</td>
+                                             </tr>
+                                             <tr>
+                                                <td>July</td>
+                                                <td>Dooley</td>
+                                                <td>july@example.com</td>
+                                             </tr>
+                                             <tr>
+                                                <td>Mary</td>
+                                                <td>Moe</td>
+                                                <td>mary@example.com</td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- table section -->
+                        </div>
+                     </div>
+
+                     <!--Chart row -->
+                     <div class="col-md-12 col-lg-6 column1">
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <div class="white_shd full margin_bottom_30">
+                                 <div class="full graph_head">
+                                    <div class="heading1 margin_0">
+                                       <h2>Line Chart</h2>
+                                    </div>
+                                 </div>
+                                 <div class="map_section padding_infor_info">
+                                    <canvas id="line_chart"></canvas>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-12">
+                              <div class="white_shd full margin_bottom_30">
+                                 <div class="full graph_head">
+                                    <div class="heading1 margin_0">
+                                       <h2>Line Chart</h2>
+                                    </div>
+                                 </div>
+                                 <div class="map_section padding_infor_info">
+                                    <canvas id="bar_chart"></canvas>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- end row -->
+                  </div>
+               </div>
+               <!-- footer -->
+               <div class="container-fluid">
+                  <div class="footer">
+                     <p>Copyright © 2022 Designed by <strong class="text-dark">DTN Team</strong> re-design. All rights
+                        reserved.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!-- end dashboard inner -->
+         </div>
+      </div>
+   </div>
+   <!-- jQuery -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <!-- wow animation -->
+   <script src="js/animate.js"></script>
+   <!-- select country -->
+   <script src="js/bootstrap-select.js"></script>
+   <!-- owl carousel -->
+   <script src="js/owl.carousel.js"></script>
+   <!-- chart js -->
+   <script src="js/Chart.min.js"></script>
+   <script src="js/Chart.bundle.min.js"></script>
+   <script src="js/utils.js"></script>
+   <script src="js/analyser.js"></script>
+   <!-- nice scrollbar -->
+   <script src="js/perfect-scrollbar.min.js"></script>
+   <script>
+      var ps = new PerfectScrollbar('#sidebar');
+   </script>
+   <!-- custom js -->
+   <script src="js/custom.js"></script>
+   <script src="js/chart_custom_style2.js"></script>
+</body>
+
+</html>
