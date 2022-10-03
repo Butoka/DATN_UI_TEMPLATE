@@ -21,24 +21,26 @@ function getChartJs(type) {
         config = {
             type: 'line',
             data: {
-                labels: ["January", "February", "March", "April", "May", "June", "July"],
+                labels: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7"],
                 datasets: [{
-                    label: "My First dataset",
+                    label: "Sản phẩm nhập",
                     data: [35, 75, 35, 45, 58, 87, 45],
                         borderColor: 'rgba(255, 87, 34, 1)',
                         backgroundColor: 'rgba(255, 87, 34, 0.3)',
                         pointBorderColor: 'rgba(30, 208, 133, 0)',
-                        pointBackgroundColor: 'rgba(30, 208, 133, 0)',
+                        pointBackgroundColor: 'red',
                         pointBorderWidth: 1
                 }, {
-                        label: "My Second dataset",
+                        label: "Sản phẩm bán",
                         data: [75, 58, 92, 58, 86, 27, 90],
                         borderColor: 'rgba(30, 208, 133, 1)',
                         backgroundColor: 'rgba(30, 208, 133, 0.3)',
                         pointBorderColor: 'rgba(255, 87, 34, 0)',
-                        pointBackgroundColor: 'rgba(255, 87, 34, 0)',
+                        pointBackgroundColor: 'green',
                         pointBorderWidth: 1
-                    }]
+                    }
+                
+                ]
             },
             options: {
                 responsive: true,
@@ -50,13 +52,13 @@ function getChartJs(type) {
         config = {
             type: 'bar',
             data: {
-                labels: ["January", "February", "March", "April", "May", "June", "July"],
+                labels: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7"],
                 datasets: [{
-                    label: "My First dataset",
+                    label: "Đơn hàng đã thanh toán",
                     data: [65, 59, 80, 81, 56, 55, 40],
                     backgroundColor: 'rgba(255, 87, 34, 1)'
                 }, {
-                        label: "My Second dataset",
+                        label: "Đơn hàng đã hủy",
                         data: [28, 48, 40, 19, 86, 27, 90],
                         backgroundColor: 'rgba(30, 208, 133, 1)'
                     }]
