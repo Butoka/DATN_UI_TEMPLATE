@@ -79,22 +79,30 @@
                            <form class="row p-3">
                               
                               <!-- Form item input -->
-                              <div class="mb-3 col-5">
-                                 <label for="exampleInputEmail1" class="form-label">Tên thương hiệu</label>
-                                 <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
+                              <div class="mb-3 col-12">
+                                 <label for="exampleInputEmail1" class="form-label h6"><span
+                                       class="text-danger">*</span> Tên thương hiệu</label>
+                                 <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Nhập tên thương hiệu...">
                               </div>
                               <!-- Form item input -->
-                              <div class="mb-3 col-5">
-                                 <label for="exampleInputEmail1" class="form-label">Logo thương hiệu</label>
-                                 <label class="btn btn-danger text-white ">
-                                    Chọn hình <input type="file" hidden>
-                                </label>
+                              <div class="mb-3 col-6">
+                                 <div for="exampleInputConfirmPass" class="form-label h6"><span
+                                       class="text-danger">*</span> Hình ảnh thương hiệu</div>
+                                 <div>
+                                    <img src="images/default.jpg" class="img-fluid w-50 h-100">
+                                 </div>
+                                 <label class="btn btn-dark mt-2 w-50">
+                                    <i class="fa fa-upload"></i> Tải ảnh lên
+                                    <input type="file" name="file" hidden>
+                                 </label>
                               </div>
                               <!-- Form item input -->             
                               <div class="col-12">
-                                 <button type="submit" class="btn btn-success">Lưu lại</button>
-                                 <button class="btn btn-danger">Hủy bỏ</button>
+                                 <button type="submit" class="btn btn-success">
+                                    <i class="fa fa-save"></i>
+                                 Lưu lại</button>
+                                 <button class="btn btn-danger" formaction="brand-list.html">Hủy bỏ</button>
                               </div>
                               
                            </form>
