@@ -2177,9 +2177,9 @@ i.icon {
 /** tabbar style 2 **/
 
 .tab_style2 .tabbar nav div.nav-tabs .nav-link.active {
-    background: #ff5722;
+    background: rgba(5, 168, 68, 0.877);
     color: #fff;
-    border-color: #ff5722;
+    border-color: rgba(5, 168, 68, 0.877);
 }
 
 

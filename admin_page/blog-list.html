@@ -9,7 +9,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <!-- site metas -->
-   <title>Quản lý sản phẩm | DTNsBike</title>
+   <title>Quản lý bài viết | DTNsBike</title>
    <meta name="keywords" content="">
    <meta name="description" content="">
    <meta name="author" content="">
@@ -54,7 +54,7 @@
                   <div class="row column_title">
                      <div class="col-md-12">
                         <div class="page_title">
-                           <h2>Danh Sách Sản Phẩm</h2>
+                           <h2>Danh Sách Tin Tức - Bài Viết</h2>
                         </div>
                      </div>
                   </div>
@@ -64,37 +64,37 @@
                         <div class="card-body p-2 text-end">
                            <div class="row">
                               <!-- Button effect -->
-                              <a href="product-update.html" class="btn btn-outline-success btn-rounded mb-1 mr-1">
+                              <a href="blog-update.html" class="btn btn-outline-success btn-rounded mb-1 mr-1">
                                  <i class="fa fa-plus-circle"></i>
-                                 <strong class="mt-1 ms-1">Tạo mới</strong>
+                                 <strong class="mt-1 ms-1">Tạo bài viết mới</strong>
                               </a>
                               <!-- Button effect -->
                               <!-- Button effect -->
-                              <a href="product-update.html" class="btn btn-outline-warning btn-rounded mb-1 mr-1">
+                              <a href="blog-update.html" class="btn btn-outline-warning btn-rounded mb-1 mr-1">
                                  <i class="fa fa-file"></i>
                                  <strong class="mt-1 ms-1">Tải file</strong>
                               </a>
                               <!-- Button effect -->
                               <!-- Button effect -->
-                              <a href="product-update.html" class="btn btn-outline-primary btn-rounded mb-1 mr-1">
+                              <a href="blog-update.html" class="btn btn-outline-primary btn-rounded mb-1 mr-1">
                                  <i class="fa fa-print"></i>
                                  <strong class="mt-1 ms-1">In dữ liệu</strong>
                               </a>
                               <!-- Button effect -->
                               <!-- Button effect -->
-                              <a href="product-update.html" class="btn btn-outline-info btn-rounded mb-1 mr-1">
+                              <a href="blog-update.html" class="btn btn-outline-info btn-rounded mb-1 mr-1">
                                  <i class="fa fa-copy"></i>
                                  <strong class="mt-1 ms-1">Sao chép</strong>
                               </a>
                               <!-- Button effect -->
                               <!-- Button effect -->
-                              <a href="product-update.html" class="btn btn-outline-success btn-rounded mb-1 mr-1 p-2">
+                              <a href="blog-update.html" class="btn btn-outline-success btn-rounded mb-1 mr-1 p-2">
                                  <i class="fa fa-file-excel-o"></i>
                                  <strong class="mt-1 ms-1">Xuất Excel</strong>
                               </a>
                               <!-- Button effect -->
                               <!-- Button effect -->
-                              <a href="product-update.html" class="btn btn-outline-danger btn-rounded mb-1 mr-1">
+                              <a href="blog-update.html" class="btn btn-outline-danger btn-rounded mb-1 mr-1">
                                  <i class="fa fa-file-pdf-o"></i>
                                  <strong class="mt-1 ms-1">Xuất Pdf</strong>
                               </a>
@@ -114,25 +114,26 @@
                                        <div class="nav nav-tabs" id="nav-tab1" role="tablist">
                                           <a class="nav-item nav-link active" id="nav-home-tab2" data-toggle="tab"
                                              href="#nav-home_s2" role="tab" aria-controls="nav-home_s2"
-                                             aria-selected="true">Tất cả sản phẩm</a>
+                                             aria-selected="true">Tất cả bài viết</a>
                                           <a class="nav-item nav-link" id="nav-profile-tab2" data-toggle="tab"
                                              href="#nav-profile_s2" role="tab" aria-controls="nav-profile_s2"
-                                             aria-selected="false">Mới nhập</a>
+                                             aria-selected="false">Bình luận</a>
                                           <a class="nav-item nav-link" id="nav-contact-tab2" data-toggle="tab"
                                              href="#nav-contact_s2" role="tab" aria-controls="nav-contacts_s2"
-                                             aria-selected="false">Sắp hết hàng</a>
-                                          <a class="nav-item nav-link" id="nav-contact-tab3" data-toggle="tab"
+                                             aria-selected="false">Chờ duyệt</a>
+                                              <a class="nav-item nav-link" id="nav-contact-tab3" data-toggle="tab"
                                              href="#nav-contact_s3" role="tab" aria-controls="nav-contacts_s2"
-                                             aria-selected="false">Đánh giá</a>
-                                          <a class="nav-item nav-link" id="nav-contact-tab4" data-toggle="tab"
+                                             aria-selected="false">Lưu nháp</a>
+                                              <a class="nav-item nav-link" id="nav-contact-tab4" data-toggle="tab"
                                              href="#nav-contact_s4" role="tab" aria-controls="nav-contacts_s2"
-                                             aria-selected="false">Lịch sử đổi giá</a>
+                                             aria-selected="false">Đã xuất bản</a>
                                        </div>
                                     </nav>
                                     <div class="tab-content" id="nav-tabContent_2">
                                        <div class="tab-pane fade show active" id="nav-home_s2" role="tabpanel"
                                           aria-labelledby="nav-home-tab">
-                                          <!-- Tất cả sản phẩm item -->
+                                          <!-- Tất cả bài viết item -->
+                                          <!-- Top in table  -->
                                           <div class="card-header row border-0" style="background-color: white;">
                                              <div class="col-md-2">
                                                 <div class="input-group mb-3">
@@ -149,7 +150,7 @@
                                                    </select>
                                                 </div>
                                              </div>
-                                             <div class="col-md-6 mb-1">
+                                             <div class="col-md-4 mb-1">
                                                 <input class="form-control" list="datalistOptions" id="exampleDataList"
                                                    placeholder="Tìm kiếm...">
                                                 <datalist id="datalistOptions">
@@ -172,7 +173,15 @@
                                                    <option value="2">Giảm dần</option>
                                                 </select>
                                              </div>
+                                             <div class="col-md-2">
+                                                <select class="custom-select text-center" id="inputGroupSelect01">
+                                                   <option selected>---Ngày đăng---</option>
+                                                   <option value="1">Cũ nhất</option>
+                                                   <option value="2">Mới nhất</option>
+                                                </select>
+                                             </div>
                                           </div>
+                                          <!-- Top in table  -->
                                           <div class="table-responsive">
                                              <table class="table table-bordered align-middle">
                                                 <thead>
@@ -180,42 +189,42 @@
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Mã sản phẩm
+                                                            ID Bài Viết
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Tên sản phẩm
+                                                            Tiêu đề
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Hình ảnh
+                                                            Ảnh đại diện
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Số lượng
+                                                            Ngày đăng
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Đơn giá
+                                                            Người đăng
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Trạng thái
+                                                            Hiển thị
 
                                                          </a>
                                                       </th>
@@ -248,19 +257,19 @@
                                                             class="img-fuild" style="width: 72px;height: 72px;">
                                                       </td>
                                                       <td>
-                                                         1000
+                                                         10/10/2022
                                                       </td>
                                                       <td>
-                                                         1,200,000 VND
+                                                         DatLoa@123
                                                       </td>
                                                       <td>
-                                                         <p class="alert alert-success" role="alert">Còn hàng</p>
+                                                         <p class="alert alert-success" role="alert">Công khai</p>
                                                       </td>
                                                       <td>
                                                          Xe đạp điện
                                                       </td>
                                                       <td>
-                                                         <a href="product-update.html" class="btn btn-outline-primary">
+                                                         <a href="blog-update.html" class="btn btn-outline-primary">
                                                             <i class="fa fa-edit"></i>
                                                          </a>
                                                          <a class="btn btn-outline-danger" href="#">
@@ -295,11 +304,12 @@
                                              </div>
                                           </div>
                                           <!-- List content footer end -->
-                                          <!-- Tất cả sản phẩm item -->
+                                          <!-- Tất cả bài viết item -->
                                        </div>
                                        <div class="tab-pane fade" id="nav-profile_s2" role="tabpanel"
                                           aria-labelledby="nav-profile-tab">
-                                          <!-- Danh sách sản phẩm mới nhất -->
+                                          <!-- Danh sách bình luận viên -->
+                                          <!-- Top in table  -->
                                           <div class="card-header row border-0" style="background-color: white;">
                                              <div class="col-md-2">
                                                 <div class="input-group mb-3">
@@ -316,7 +326,7 @@
                                                    </select>
                                                 </div>
                                              </div>
-                                             <div class="col-md-6 mb-1">
+                                             <div class="col-md-4 mb-1">
                                                 <input class="form-control" list="datalistOptions" id="exampleDataList"
                                                    placeholder="Tìm kiếm...">
                                                 <datalist id="datalistOptions">
@@ -339,7 +349,15 @@
                                                    <option value="2">Giảm dần</option>
                                                 </select>
                                              </div>
+                                             <div class="col-md-2">
+                                                <select class="custom-select text-center" id="inputGroupSelect01">
+                                                   <option selected>---Ngày đăng---</option>
+                                                   <option value="1">Cũ nhất</option>
+                                                   <option value="2">Mới nhất</option>
+                                                </select>
+                                             </div>
                                           </div>
+                                          <!-- Top in table  -->
                                           <div class="table-responsive">
                                              <table class="table table-bordered align-middle">
                                                 <thead>
@@ -347,42 +365,42 @@
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Mã sản phẩm
+                                                            ID Bài Viết
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Tên sản phẩm
+                                                            Tiêu đề
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Hình ảnh
+                                                            Ảnh đại diện
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Số lượng
+                                                            Ngày đăng
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Đơn giá
+                                                            Người đăng
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Trạng thái
+                                                            Hiển thị
 
                                                          </a>
                                                       </th>
@@ -415,19 +433,19 @@
                                                             class="img-fuild" style="width: 72px;height: 72px;">
                                                       </td>
                                                       <td>
-                                                         1000
+                                                         10/10/2022
                                                       </td>
                                                       <td>
-                                                         1,200,000 VND
+                                                         DatLoa@123
                                                       </td>
                                                       <td>
-                                                         <p class="alert alert-success" role="alert">Còn hàng</p>
+                                                         <p class="alert alert-success" role="alert">Công khai</p>
                                                       </td>
                                                       <td>
                                                          Xe đạp điện
                                                       </td>
                                                       <td>
-                                                         <a href="product-update.html" class="btn btn-outline-primary">
+                                                         <a href="blog-update.html" class="btn btn-outline-primary">
                                                             <i class="fa fa-edit"></i>
                                                          </a>
                                                          <a class="btn btn-outline-danger" href="#">
@@ -461,12 +479,14 @@
                                                 <p>Đang xem 1 đến 10 trong tổng số 10 mục.</p>
                                              </div>
                                           </div>
-                                          <!-- Danh sách sản phẩm mới nhất -->
+                                          <!-- List content footer end -->
+                                          <!-- Danh sách bình luận viên -->
                                        </div>
                                        <div class="tab-pane fade" id="nav-contact_s2" role="tabpanel"
                                           aria-labelledby="nav-contact-tab">
-                                          <!-- Danh sách sản phẩm sắp hết -->
-                                             <div class="card-header row border-0" style="background-color: white;">
+                                          <!-- Danh sách chờ duyệt -->
+                                          <!-- Top in table  -->
+                                          <div class="card-header row border-0" style="background-color: white;">
                                              <div class="col-md-2">
                                                 <div class="input-group mb-3">
                                                    <div class="input-group-prepend">
@@ -482,7 +502,7 @@
                                                    </select>
                                                 </div>
                                              </div>
-                                             <div class="col-md-6 mb-1">
+                                             <div class="col-md-4 mb-1">
                                                 <input class="form-control" list="datalistOptions" id="exampleDataList"
                                                    placeholder="Tìm kiếm...">
                                                 <datalist id="datalistOptions">
@@ -505,7 +525,15 @@
                                                    <option value="2">Giảm dần</option>
                                                 </select>
                                              </div>
+                                             <div class="col-md-2">
+                                                <select class="custom-select text-center" id="inputGroupSelect01">
+                                                   <option selected>---Ngày đăng---</option>
+                                                   <option value="1">Cũ nhất</option>
+                                                   <option value="2">Mới nhất</option>
+                                                </select>
+                                             </div>
                                           </div>
+                                          <!-- Top in table  -->
                                           <div class="table-responsive">
                                              <table class="table table-bordered align-middle">
                                                 <thead>
@@ -513,42 +541,42 @@
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Mã sản phẩm
+                                                            ID Bài Viết
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Tên sản phẩm
+                                                            Tiêu đề
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Hình ảnh
+                                                            Ảnh đại diện
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Số lượng
+                                                            Ngày đăng
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Đơn giá
+                                                            Người đăng
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Trạng thái
+                                                            Hiển thị
 
                                                          </a>
                                                       </th>
@@ -581,19 +609,19 @@
                                                             class="img-fuild" style="width: 72px;height: 72px;">
                                                       </td>
                                                       <td>
-                                                         1000
+                                                         10/10/2022
                                                       </td>
                                                       <td>
-                                                         1,200,000 VND
+                                                         DatLoa@123
                                                       </td>
                                                       <td>
-                                                         <p class="alert alert-success" role="alert">Còn hàng</p>
+                                                         <p class="alert alert-success" role="alert">Công khai</p>
                                                       </td>
                                                       <td>
                                                          Xe đạp điện
                                                       </td>
                                                       <td>
-                                                         <a href="product-update.html" class="btn btn-outline-primary">
+                                                         <a href="blog-update.html" class="btn btn-outline-primary">
                                                             <i class="fa fa-edit"></i>
                                                          </a>
                                                          <a class="btn btn-outline-danger" href="#">
@@ -627,12 +655,14 @@
                                                 <p>Đang xem 1 đến 10 trong tổng số 10 mục.</p>
                                              </div>
                                           </div>
-                                          <!-- Danh sách sắp hết -->
+                                          <!-- List content footer end -->
+                                          <!-- Danh sách chờ duyệt -->
                                        </div>
-                                       <div class="tab-pane fade" id="nav-contact_s3" role="tabpanel"
+                                        <div class="tab-pane fade" id="nav-contact_s3" role="tabpanel"
                                           aria-labelledby="nav-contact-tab">
-                                          <!-- Danh sách đánh giá -->
-                                             <div class="card-header row border-0" style="background-color: white;">
+                                          <!-- Danh sách đã lưu nháp -->
+                                          <!-- Top in table  -->
+                                          <div class="card-header row border-0" style="background-color: white;">
                                              <div class="col-md-2">
                                                 <div class="input-group mb-3">
                                                    <div class="input-group-prepend">
@@ -648,7 +678,7 @@
                                                    </select>
                                                 </div>
                                              </div>
-                                             <div class="col-md-6 mb-1">
+                                             <div class="col-md-4 mb-1">
                                                 <input class="form-control" list="datalistOptions" id="exampleDataList"
                                                    placeholder="Tìm kiếm...">
                                                 <datalist id="datalistOptions">
@@ -671,7 +701,15 @@
                                                    <option value="2">Giảm dần</option>
                                                 </select>
                                              </div>
+                                             <div class="col-md-2">
+                                                <select class="custom-select text-center" id="inputGroupSelect01">
+                                                   <option selected>---Ngày đăng---</option>
+                                                   <option value="1">Cũ nhất</option>
+                                                   <option value="2">Mới nhất</option>
+                                                </select>
+                                             </div>
                                           </div>
+                                          <!-- Top in table  -->
                                           <div class="table-responsive">
                                              <table class="table table-bordered align-middle">
                                                 <thead>
@@ -679,42 +717,42 @@
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Mã sản phẩm
+                                                            ID Bài Viết
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Tên sản phẩm
+                                                            Tiêu đề
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Hình ảnh
+                                                            Ảnh đại diện
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Số lượng
+                                                            Ngày đăng
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Đơn giá
+                                                            Người đăng
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Trạng thái
+                                                            Hiển thị
 
                                                          </a>
                                                       </th>
@@ -747,19 +785,19 @@
                                                             class="img-fuild" style="width: 72px;height: 72px;">
                                                       </td>
                                                       <td>
-                                                         1000
+                                                         10/10/2022
                                                       </td>
                                                       <td>
-                                                         1,200,000 VND
+                                                         DatLoa@123
                                                       </td>
                                                       <td>
-                                                         <p class="alert alert-success" role="alert">Còn hàng</p>
+                                                         <p class="alert alert-success" role="alert">Công khai</p>
                                                       </td>
                                                       <td>
                                                          Xe đạp điện
                                                       </td>
                                                       <td>
-                                                         <a href="product-update.html" class="btn btn-outline-primary">
+                                                         <a href="blog-update.html" class="btn btn-outline-primary">
                                                             <i class="fa fa-edit"></i>
                                                          </a>
                                                          <a class="btn btn-outline-danger" href="#">
@@ -793,12 +831,14 @@
                                                 <p>Đang xem 1 đến 10 trong tổng số 10 mục.</p>
                                              </div>
                                           </div>
-                                          <!-- Danh sách đánh giá -->
+                                          <!-- List content footer end -->
+                                          <!-- Danh sách đã lưu nháp -->
                                        </div>
                                        <div class="tab-pane fade" id="nav-contact_s4" role="tabpanel"
                                           aria-labelledby="nav-contact-tab">
-                                          <!-- Danh sách lịch sử đổi giá -->
-                                             <div class="card-header row border-0" style="background-color: white;">
+                                          <!-- Danh sách đã xuất bản -->
+                                          <!-- Top in table  -->
+                                          <div class="card-header row border-0" style="background-color: white;">
                                              <div class="col-md-2">
                                                 <div class="input-group mb-3">
                                                    <div class="input-group-prepend">
@@ -814,7 +854,7 @@
                                                    </select>
                                                 </div>
                                              </div>
-                                             <div class="col-md-6 mb-1">
+                                             <div class="col-md-4 mb-1">
                                                 <input class="form-control" list="datalistOptions" id="exampleDataList"
                                                    placeholder="Tìm kiếm...">
                                                 <datalist id="datalistOptions">
@@ -837,7 +877,15 @@
                                                    <option value="2">Giảm dần</option>
                                                 </select>
                                              </div>
+                                             <div class="col-md-2">
+                                                <select class="custom-select text-center" id="inputGroupSelect01">
+                                                   <option selected>---Ngày đăng---</option>
+                                                   <option value="1">Cũ nhất</option>
+                                                   <option value="2">Mới nhất</option>
+                                                </select>
+                                             </div>
                                           </div>
+                                          <!-- Top in table  -->
                                           <div class="table-responsive">
                                              <table class="table table-bordered align-middle">
                                                 <thead>
@@ -845,42 +893,42 @@
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Mã sản phẩm
+                                                            ID Bài Viết
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Tên sản phẩm
+                                                            Tiêu đề
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Hình ảnh
+                                                            Ảnh đại diện
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Số lượng
+                                                            Ngày đăng
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Đơn giá
+                                                            Người đăng
 
                                                          </a>
                                                       </th>
                                                       <th>
                                                          <a href="#" style="text-decoration: none;" class="text-white">
 
-                                                            Trạng thái
+                                                            Hiển thị
 
                                                          </a>
                                                       </th>
@@ -913,19 +961,19 @@
                                                             class="img-fuild" style="width: 72px;height: 72px;">
                                                       </td>
                                                       <td>
-                                                         1000
+                                                         10/10/2022
                                                       </td>
                                                       <td>
-                                                         1,200,000 VND
+                                                         DatLoa@123
                                                       </td>
                                                       <td>
-                                                         <p class="alert alert-success" role="alert">Còn hàng</p>
+                                                         <p class="alert alert-success" role="alert">Công khai</p>
                                                       </td>
                                                       <td>
                                                          Xe đạp điện
                                                       </td>
                                                       <td>
-                                                         <a href="product-update.html" class="btn btn-outline-primary">
+                                                         <a href="blog-update.html" class="btn btn-outline-primary">
                                                             <i class="fa fa-edit"></i>
                                                          </a>
                                                          <a class="btn btn-outline-danger" href="#">
@@ -959,7 +1007,8 @@
                                                 <p>Đang xem 1 đến 10 trong tổng số 10 mục.</p>
                                              </div>
                                           </div>
-                                          <!-- Danh sách lịch sử đổi giá -->
+                                          <!-- List content footer end -->
+                                          <!-- Danh sách đã xuất bản -->
                                        </div>
                                     </div>
                                  </div>
