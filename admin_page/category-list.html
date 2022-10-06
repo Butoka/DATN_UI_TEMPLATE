@@ -9,7 +9,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <!-- site metas -->
-   <title>Quản lý nhân viên| DTNsBike</title>
+   <title>Quản lý danh mục sản phẩm| DTNsBike</title>
    <meta name="keywords" content="">
    <meta name="description" content="">
    <meta name="author" content="">
@@ -54,7 +54,7 @@
                   <div class="row column_title">
                      <div class="col-md-12">
                         <div class="page_title">
-                           <h2>Danh sách nhân viên</h2>
+                           <h2>Danh sách danh mục sản phẩm</h2>
                         </div>
                      </div>
                   </div>
@@ -63,34 +63,93 @@
                      <div class="col-12 card pt-2 pb-2 border-0">
                         <div class="card-body p-2 text-end">
                            <!-- Button effect -->
-                           <a href="staff_uppdate.html" class="btn btn-success btn-rounded text-white mb-1">
+                           <a href="category-update.html" class="btn btn-success btn-rounded text-white mb-1">
                               <i class="fa fa-plus-circle"></i>
-                              <strong class="mt-1 ms-1">Tạo mới nhân viên</strong>
+                              <strong class="mt-1 ms-1">Tạo mới danh mục</strong>
                            </a>
-                           <!-- Button effect -->
-                           <!-- Button effect -->
-                           <a href="staff_uppdate.html" class="btn btn-success btn-rounded text-white mb-1">
+                           <a href="#" class="btn btn-danger btn-rounded text-white mb-1" data-toggle="modal" data-target="#exampleModal2">
                               <i class="fa fa-plus-circle"></i>
-                              <strong class="mt-1 ms-1">Tạo mới nhân viên</strong>
+                              <strong class="mt-1 ms-1">Tạo mới danh mục con</strong>
                            </a>
-                           <!-- Button effect -->
-                           <!-- Button effect -->
-                           <a href="staff_uppdate.html" class="btn btn-success btn-rounded text-white mb-1">
-                              <i class="fa fa-plus-circle"></i>
-                              <strong class="mt-1 ms-1">Tạo mới nhân viên</strong>
-                           </a>
-                           <!-- Button effect -->
-                           <!-- Button effect -->
-                           <a href="staff_uppdate.html" class="btn btn-success btn-rounded text-white mb-1">
-                              <i class="fa fa-plus-circle"></i>
-                              <strong class="mt-1 ms-1">Tạo mới nhân viên</strong>
-                           </a>
-                           <!-- Button effect -->
-                           <!-- Button effect -->
-                           <a href="staff_uppdate.html" class="btn btn-success btn-rounded text-white mb-1">
-                              <i class="fa fa-plus-circle"></i>
-                              <strong class="mt-1 ms-1">Tạo mới nhân viên</strong>
-                           </a>
+                           <!-- modal tạo danh mục con -->
+                           <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Danh Mục Con</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                 </div>
+                                 <div class="modal-body">
+                                    <select class="custom-select text-center" id="inputGroupSelect01">
+                                       <option selected>--Chọn danh mục--</option>
+                                       <option value="1">Xe đạp địa hình</option>
+                                       <option value="2">Xe đạp thể thao</option>
+                                    </select>
+                                    <br><br>
+                                    <label class="form-label">Tên danh mục con mới</label>
+                                    <input type="text" class="form-control">
+                                    <br>
+                                    <label class="form-label">Danh sách danh mục con:</label>
+
+                                    <div class="table-responsive">
+                                      <table class="table table-bordered">
+                                       <thead>
+                                          <tr>
+                                             <th>
+                                                <a href="#" style="text-decoration: none;">
+                                                   <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
+                                                   <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
+                                                   Tên Danh Mục
+                                                   <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
+                                                   <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
+                                                </a>
+                                             </th>                                  
+                                             <th>Action</th>
+                                          </tr>
+                                       </thead>      
+                                       <tfoot>      
+                                       </tfoot>
+                                       <tbody>
+                                          <tr>
+                                             <td>Ống bơm</td>
+                                             <td>
+                                                <a href="#" class="btn btn-outline-primary">
+                                                   <i class="fa fa-edit"></i>
+                                                </a>
+                                                <a class="btn btn-outline-danger" href="#">
+                                                   <i class="fa fa-trash"></i>
+                                                </a>
+
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>Chân chống</td>
+                                             <td>
+                                                <a href="#" class="btn btn-outline-primary">
+                                                   <i class="fa fa-edit"></i>
+                                                </a>
+                                                <a class="btn btn-outline-danger" href="#">
+                                                   <i class="fa fa-trash"></i>
+                                                </a>
+
+                                             </td>
+                                          </tr>     
+                                       </tbody>
+                                    </table>
+                                 </div>
+                                 </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                    <button type="button" class="btn btn-primary">Lưu</button>
+                                 </div>
+                              </div>
+                              </div>
+                           </div>
+
+
+
                            <!-- Button effect -->
                         </div>
                      </div>
@@ -125,9 +184,8 @@
                               <div class="col-md-2">
                                  <select class="custom-select text-center" id="inputGroupSelect01">
                                     <option selected>---Sắp xếp theo---</option>
-                                    <option value="1">Họ tên</option>
-                                    <option value="2">Năm sinh</option>
-                                    <option value="3">Email</option>
+                                    <option value="1">A-Z</option>
+                                    <option value="2">Z-A</option>
                                  </select>
                               </div>
                               <div class="col-md-2">
@@ -146,7 +204,7 @@
                                           <a href="#" style="text-decoration: none;">
                                              <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
                                              <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
-                                             Tên đăng nhập
+                                             Mã Danh Mục
                                              <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
                                              <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
                                           </a>
@@ -155,30 +213,11 @@
                                           <a href="#" style="text-decoration: none;">
                                              <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
                                              <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
-                                             Tên đăng nhập
+                                             Tên Danh Mục
                                              <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
                                              <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
                                           </a>
-                                       </th>
-                                       <th>
-                                          <a href="#" style="text-decoration: none;">
-                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
-                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
-                                             Tên đăng nhập
-                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
-                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
-                                          </a>
-                                       </th>
-                                       <th>
-                                          <a href="#" style="text-decoration: none;">
-                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
-                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
-                                             Tên đăng nhập
-                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
-                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
-                                          </a>
-                                       </th>
-                                   
+                                       </th>                                  
                                        <th>Action</th>
                                     </tr>
                                  </thead>
@@ -191,8 +230,6 @@
                                     <tr>
                                        <td></td>
                                        <td></td>
-                                       <td></td>
-                                       <td></td>
                                        <td>
                                           <a href="#" class="btn btn-outline-primary">
                                              <i class="fa fa-edit"></i>
@@ -200,12 +237,62 @@
                                           <a class="btn btn-outline-danger" href="#">
                                              <i class="fa fa-trash"></i>
                                           </a>
+                                          <a class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal" href="#">
+                                             <i class="fa fa-reorder"></i>
+                                          </a>
                                        </td>
                                     </tr>
 
                                  </tbody>
                               </table>
                            </div>
+                     
+                     <!-- Modal -->
+                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Danh Mục Con</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                           </div>
+                           <div class="modal-body">
+                              
+                              <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                 <label class="form-check-label" for="inlineCheckbox1">Chân chống</label>
+                               </div>
+                               <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                 <label class="form-check-label" for="inlineCheckbox2">Chuông-còi</label>
+                               </div>
+                               <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                 <label class="form-check-label" for="inlineCheckbox2">Giá đỡ phụ kiện</label>
+                               </div>
+                               <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                 <label class="form-check-label" for="inlineCheckbox2">Khóa</label>
+                               </div>
+                               <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                 <label class="form-check-label" for="inlineCheckbox2">Ống bơm</label>
+                               </div>
+
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                              <button type="button" class="btn btn-primary">Lưu</button>
+                           </div>
+                        </div>
+                        </div>
+                     </div>
+
+
+
+                           <!-- Scrollable modal -->
+
                            <!-- List content footer -->
                            <div class="card-footer row mt-2 border-0" style="background-color: white;">
                               <nav aria-label="..." class="col-4">

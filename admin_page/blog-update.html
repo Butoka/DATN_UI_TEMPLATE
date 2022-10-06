@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Quản lý bài viết | DTNsBike</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- site icon -->
+   <link rel="icon" href="logo/icon2.png" type="image/png" />
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <!-- site css -->
+   <link rel="stylesheet" href="style.css" />
+   <!-- responsive css -->
+   <link rel="stylesheet" href="css/responsive.css" />
+   <!-- color css -->
+   <link rel="stylesheet" href="css/color_2.css" />
+   <!-- select bootstrap -->
+   <link rel="stylesheet" href="css/bootstrap-select.css" />
+   <!-- scrollbar css -->
+   <link rel="stylesheet" href="css/perfect-scrollbar.css" />
+   <!-- custom css -->
+   <link rel="stylesheet" href="css/custom.css" />
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   <!-- ckeditor -->
+   <script src="https://cdn.ckeditor.com/4.20.0/standard/ckeditor.js"></script>
+</head>
+
+<body class="dashboard dashboard_2">
+   <div class="full_container">
+      <div class="inner_container">
+         <!-- Sidebar  -->
+
+         <!-- end sidebar -->
+         <!-- right content -->
+         <div id="content">
+            <!-- topbar -->
+
+
+            <!-- end topbar -->
+            <!-- dashboard inner -->
+            <div class="midde_cont">
+               <div class="container-fluid">
+                  <!-- Title -->
+                  <div class="row column_title">
+                     <div class="col-md-12">
+                        <div class="page_title">
+                           <h2>Cập nhật thông tin bài viết</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Content -->
+                  <div class="row">
+                     <div class="col-12 card pt-2 pb-2 border-0">
+                        <div class="card-body p-2 text-end">
+                           <!-- Button effect -->
+                           <a href="blog-list.html" class="btn btn-primary btn-rounded text-white mb-1">
+                              <i class="fa fa-list"></i>
+                              <strong class="mt-1 ms-1">Danh sách bài viết</strong>
+                           </a>
+                           <!-- Button effect -->
+                           <!-- Button effect -->
+                           <a href="category-update.html" class="btn btn-success btn-rounded text-white mb-1">
+                              <i class="fa fa-plus-circle"></i>
+                              <strong class="mt-1 ms-1">Thêm danh mục</strong>
+                           </a>
+                           <!-- Button effect -->
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Thân -->
+                  <div class="row mt-2">
+                     <div class="col-12 card">
+                        <div class="card-body">
+                           <form class="row p-3">
+                              <div class="col-8 row">
+                                 <!-- Form item input -->
+                                 <div class="mb-3 col-12">
+                                    <label for="exampleInputID" class="form-label h6"><span class="text-danger">*</span>
+                                       Tiêu đề </label>
+                                    <input type="text" class="form-control" id="exampleInputID"
+                                       aria-describedby="emailHelp" placeholder="Nhập tiêu đề bài viết...">
+                                 </div>
+                                 <!-- Form item input -->
+                                 <!-- Form item input -->
+                                 <div class="mb-3 col-12">
+                                    <label for="exampleInputName" class="form-label h6"><span
+                                          class="text-danger">*</span> Danh mục</label>
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                       <option selected>--Chọn danh mục--</option>
+                                       <option value="1">Xe đạp</option>
+                                       <option value="2">Phụ tùng</option>
+                                    </select>
+                                 </div>
+                                 <!-- Form item input -->
+                                 <!-- Form item input -->
+                                 <div class="mb-3 col-12">
+                                    <label for="exampleInputConfirmPass" class="form-label h6"><span
+                                          class="text-danger">*</span> Hiển thị</label>
+                                   <select class="custom-select" id="inputGroupSelect01">
+                                       <option selected>--Chọn chế độ hiển thị--</option>
+                                       <option value="1">Công khai</option>
+                                       <option value="2">Riêng tư</option>
+                                    </select>
+                                 </div>
+                                 <!-- Form item input -->
+                                   <!-- Form item input -->
+                                 <div class="mb-3 col-12">
+                                    <label for="exampleInputConfirmPass" class="form-label h6"><span
+                                          class="text-danger">*</span> Đăng</label>
+                                   <select class="custom-select" id="inputGroupSelect01">
+                                       <option selected>--Chọn thời gian đăng bài--</option>
+                                       <option value="1">Ngay</option>
+                                       <option value="2">Ngày mai</option>
+                                    </select>
+                                 </div>
+                                 <!-- Form item input -->
+                                  <!-- Form item input -->
+                                 <div class="mb-3 col-12">
+                                   <!-- Form checkbok item -->
+                                   <div class="form-check form-check-inline ml-3">
+                                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                      <label class="form-check-label h6" for="inlineCheckbox1">Giữ trên cùng bài viết.</label>
+                                    </div>
+                                    <!-- Form checkbok item -->
+                                    <!-- Form checkbok item -->
+                                   <div class="form-check form-check-inline ml-3">
+                                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                      <label class="form-check-label h6" for="inlineCheckbox2">Chờ duyệt</label>
+                                    </div>
+                                    <!-- Form checkbok item -->
+                                 </div>
+                                 <!-- Form item input -->
+                                 
+                              <!-- Form item input -->
+                                 <div class="mb-3 col-12">
+                                    <label for="exampleInputConfirmPass" class="form-label h6"><span
+                                          class="text-danger">*</span>Mô tả ngắn</label>
+                                    <input type="text" name="editor2">  
+                                 </div>
+                              <!-- Form item input -->
+                                 <!-- Form item input -->
+                                 <div class="mb-3 col-12">
+                                    <label for="exampleInputConfirmPass" class="form-label h6"><span
+                                          class="text-danger">*</span>Mô tả chi tiết</label>
+                                    <textarea name="editor1"></textarea>
+                                 </div>
+                              </div>
+                              <!-- Form item input -->
+                              <div class="mb-3 col-4">
+                                  <div class="row">
+                                       <div class="col-12 text-center mt-2 mb-3">
+                                       <button type="submit" class="btn btn-success">
+                                          <i class="fa fa-save"></i>
+                                          Lưu lại
+                                       </button>
+                                       <button type="submit" class="btn btn-primary">
+                                          <!-- <i class="fa fa-save"></i> -->
+                                          Đăng bài
+                                       </button>
+                                       <button class="btn btn-danger" formaction="blog-list.html">
+                                          <i class="fa fa-cancel"></i>
+                                          Hủy bỏ</button>
+                                 </div>
+                                  </div>
+                                 <div for="exampleInputConfirmPass" class="form-label h6"><span
+                                       class="text-danger">*</span> Ảnh đại diện</div>
+                                 <div>
+                                    <img src="images/default.jpg" class="img-fluid w-100 h-100">
+                                 </div>
+                                 <label class="btn btn-dark mt-2 w-100">
+                                    <i class="fa fa-upload"></i> Tải ảnh lên
+                                    <input type="file" name="file" hidden>
+                                 </label>
+
+                                 <!-- Img product extra -->
+                                 <div for="exampleInputConfirmPass" class="form-label h6"><span
+                                       class="text-danger">*</span> Ảnh bổ sung cho bài viết</div>
+                                 <div class="row">
+                                     <label class="mt-2 col-4">
+                                       <img src="images/img-add.png" class="img-thumbnail">
+                                       <input type="file" name="file" hidden>
+                                    </label>
+                                    <img src="images/default.jpg" class="col-4 img-fluid w-50 h-50">
+                                    <img src="images/default.jpg" class="col-4 img-fluid w-50 h-50">
+                                    <img src="images/default.jpg" class="col-4 img-fluid w-50 h-50">
+                                    <img src="images/default.jpg" class="col-4 img-fluid w-50 h-50">
+                                    <img src="images/default.jpg" class="col-4 img-fluid w-50 h-50">
+                                 </div>
+
+                              </div>
+                              <!-- Form item input -->
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- thân end -->
+               </div>
+               <!-- footer -->
+            </div>
+            <!-- end dashboard inner -->
+         </div>
+      </div>
+   </div>
+
+   <script>
+      CKEDITOR.replace('editor1');
+      CKEDITOR.replace('editor2');
+   </script>
+   <!-- jQuery -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <!-- wow animation -->
+   <script src="js/animate.js"></script>
+   <!-- select country -->
+   <script src="js/bootstrap-select.js"></script>
+   <!-- owl carousel -->
+   <script src="js/owl.carousel.js"></script>
+   <!-- chart js -->
+   <script src="js/Chart.min.js"></script>
+   <script src="js/Chart.bundle.min.js"></script>
+   <script src="js/utils.js"></script>
+   <script src="js/analyser.js"></script>
+   <!-- nice scrollbar -->
+   <script src="js/perfect-scrollbar.min.js"></script>
+   <script>
+      var ps = new PerfectScrollbar('#sidebar');
+   </script>
+   <!-- custom js -->
+   <script src="js/custom.js"></script>
+   <script src="js/chart_custom_style2.js"></script>
+</body>
+
+</html>
