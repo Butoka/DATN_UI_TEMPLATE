@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Quản lý nhân viên| DTNsBike</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- site icon -->
+   <link rel="icon" href="logo/icon2.png" type="image/png" />
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <!-- site css -->
+   <link rel="stylesheet" href="style.css" />
+   <!-- responsive css -->
+   <link rel="stylesheet" href="css/responsive.css" />
+   <!-- color css -->
+   <link rel="stylesheet" href="css/color_2.css" />
+   <!-- select bootstrap -->
+   <link rel="stylesheet" href="css/bootstrap-select.css" />
+   <!-- scrollbar css -->
+   <link rel="stylesheet" href="css/perfect-scrollbar.css" />
+   <!-- custom css -->
+   <link rel="stylesheet" href="css/custom.css" />
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body class="dashboard dashboard_2">
+   <div class="full_container">
+      <div class="inner_container">
+         <!-- Sidebar  -->
+
+         <!-- end sidebar -->
+         <!-- right content -->
+         <div id="content">
+            <!-- topbar -->
+
+
+            <!-- end topbar -->
+            <!-- dashboard inner -->
+            <div class="midde_cont">
+               <div class="container-fluid">
+                  <!-- Title -->
+                  <div class="row column_title">
+                     <div class="col-md-12">
+                        <div class="page_title">
+                           <h2>Thêm tài khoản</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Content -->
+                  <div class="row">
+                     <div class="col-12 card pt-2 pb-2 border-0">
+                        <div class="card-body p-2 text-end">
+                           <!-- Button effect -->
+                           <a href="account-list.html" class="btn btn-primary btn-rounded text-white mb-1">
+                              <i class="fa fa-list"></i>
+                              <strong class="mt-1 ms-1">Danh sách nhân viên</strong>
+                           </a>
+                           <!-- Button effect -->
+
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Thân -->
+                  <div class="row mt-2">
+                     <div class="col-12 card">
+                        <div class="card-body">
+                           <form class=" p-3">
+                              <div class="row">
+                                 <!-- Form item input -->
+                                 <div class="mb-3 col-md-6 col-12">
+                                    <label for="username" class="form-label font-weight">Tên đăng nhập</label>
+                                    <input type="text" class="form-control" id="username" name="username"
+                                       aria-describedby="usernameHelp">
+                                 </div>
+                                 <!-- Form item input -->
+                                 <!-- Form item input -->
+                                 <div class="mb-3 col-md-6 col-12">
+                                    <label for="fullname" class="form-label">Họ và tên</label>
+                                    <input type="text" class="form-control" id="fullname" aria-describedby="emailHelp">
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <!-- Form item input -->
+                                 <div class="mb-3 col-md-6 col-12">
+                                    <label for="password" class="form-label font-weight">Mật khẩu</label>
+                                    <input type="password" class="form-control" id="password" name="password"
+                                       aria-describedby="passwordHelp">
+                                 </div>
+                                 <!-- Form item input -->
+                                 <!-- Form item input -->
+                                 <div class="mb-3 col-md-6 col-12">
+                                    <label for="RePassword" class="form-label font-weight">Nhập lại mật khẩu</label>
+                                    <input type="password" class="form-control" id="RePassword" name="RePassword"
+                                       aria-describedby="RePasswordHelp">
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <!-- Form item input -->
+                                 <div class="mb-3 col-md-6 col-12">
+                                    <label for="phone" class="form-label font-weight">Số điện thoại</label>
+                                    <input type="text" class="form-control" id="phone" name="phone"
+                                       aria-describedby="phoneHelp">
+                                 </div>
+                                 <!-- Form item input -->
+                                 <!-- Form item input -->
+                                 <div class="mb-3 col-md-6 col-12">
+                                    <label for="email" class="form-label font-weight">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                       aria-describedby="emailHelp">
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <!-- Form item input -->
+                                 <div class="mb-3 col-md-6 col-12">
+                                    <label for="phone" class="">Giới tính</label>
+                                    <div class="form-inline">
+                                       <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="gender" id="inlineRadio1"
+                                             value="male">
+                                          <label class="form-check-label" for="inlineRadio1">Nam</label>
+                                       </div>
+                                       <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="gender" id="inlineRadio2"
+                                             value="female">
+                                          <label class="form-check-label" for="inlineRadio2">Nữ</label>
+                                       </div>
+                                       <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="gender" id="inlineRadio3"
+                                             value="other">
+                                          <label class="form-check-label" for="inlineRadio3">Khác</label>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- Form item input -->
+                                 <!-- Form item input -->
+                                 <div class="mb-3 col-md-6 col-12">
+                                    <label for="phone" class="">Ngày
+                                       sinh</label>
+                                    <input type="date" class="form-control">
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <!-- Form item input -->
+                                 <div class="mb-3 col-md-6 col-12">
+                                    <label for="phone" class="">Vai trò</label>
+                                    <div class="row ml-1">
+                                       <div class="form-check col-6">
+                                          <input class="form-check-input" type="checkbox" id="roleAdmin"
+                                             value="admin" name="role">
+                                          <label class="form-check-label" for="roleAdmin">Admin</label>
+                                       </div>
+                                       <div class="form-check col-6">
+                                          <input class="form-check-input" type="checkbox" id="roleStaff"
+                                             value="admin" name="role">
+                                          <label class="form-check-label" for="roleStaff">Nhân viên</label>
+                                       </div>
+                                       <div class="form-check col-6">
+                                          <input class="form-check-input" type="checkbox" id="roleUser"
+                                             value="admin" name="role">
+                                          <label class="form-check-label" for="roleUser">Người dùng</label>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                              </div>
+                              <!-- Form item input -->
+                              <div class="row">
+                                 <div class="col-12">
+                                    <button type="submit" class="btn btn-success">Lưu lại</button>
+                                    <button class="btn btn-danger">Hủy bỏ</button>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- thân end -->
+               </div>
+               <!-- footer -->
+            </div>
+            <!-- end dashboard inner -->
+         </div>
+      </div>
+   </div>
+   <!-- jQuery -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <!-- wow animation -->
+   <script src="js/animate.js"></script>
+   <!-- select country -->
+   <script src="js/bootstrap-select.js"></script>
+   <!-- owl carousel -->
+   <script src="js/owl.carousel.js"></script>
+   <!-- chart js -->
+   <script src="js/Chart.min.js"></script>
+   <script src="js/Chart.bundle.min.js"></script>
+   <script src="js/utils.js"></script>
+   <script src="js/analyser.js"></script>
+   <!-- nice scrollbar -->
+   <script src="js/perfect-scrollbar.min.js"></script>
+   <script>
+      var ps = new PerfectScrollbar('#sidebar');
+   </script>
+   <!-- custom js -->
+   <script src="js/custom.js"></script>
+   <script src="js/chart_custom_style2.js"></script>
+     
+</body>
+
+</html>
