@@ -9,7 +9,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <!-- site metas -->
-   <title>Quản lý nhân viên| DTNsBike</title>
+   <title>Quản lý đơn hàng | DTNsBike</title>
    <meta name="keywords" content="">
    <meta name="description" content="">
    <meta name="author" content="">
@@ -54,7 +54,7 @@
                   <div class="row column_title">
                      <div class="col-md-12">
                         <div class="page_title">
-                           <h2>Danh sách nhân viên</h2>
+                           <h2>Danh Sách Đơn Hàng</h2>
                         </div>
                      </div>
                   </div>
@@ -62,176 +62,884 @@
                   <div class="row">
                      <div class="col-12 card pt-2 pb-2 border-0">
                         <div class="card-body p-2 text-end">
-                           <!-- Button effect -->
-                           <a href="staff_uppdate.html" class="btn btn-success btn-rounded text-white mb-1">
-                              <i class="fa fa-plus-circle"></i>
-                              <strong class="mt-1 ms-1">Tạo mới nhân viên</strong>
-                           </a>
-                           <!-- Button effect -->
-                           <!-- Button effect -->
-                           <a href="staff_uppdate.html" class="btn btn-success btn-rounded text-white mb-1">
-                              <i class="fa fa-plus-circle"></i>
-                              <strong class="mt-1 ms-1">Tạo mới nhân viên</strong>
-                           </a>
-                           <!-- Button effect -->
-                           <!-- Button effect -->
-                           <a href="staff_uppdate.html" class="btn btn-success btn-rounded text-white mb-1">
-                              <i class="fa fa-plus-circle"></i>
-                              <strong class="mt-1 ms-1">Tạo mới nhân viên</strong>
-                           </a>
-                           <!-- Button effect -->
-                           <!-- Button effect -->
-                           <a href="staff_uppdate.html" class="btn btn-success btn-rounded text-white mb-1">
-                              <i class="fa fa-plus-circle"></i>
-                              <strong class="mt-1 ms-1">Tạo mới nhân viên</strong>
-                           </a>
-                           <!-- Button effect -->
-                           <!-- Button effect -->
-                           <a href="staff_uppdate.html" class="btn btn-success btn-rounded text-white mb-1">
-                              <i class="fa fa-plus-circle"></i>
-                              <strong class="mt-1 ms-1">Tạo mới nhân viên</strong>
-                           </a>
-                           <!-- Button effect -->
+                           <div class="row">
+                              <!-- Button effect -->
+                              <a href="product-update.html" class="btn btn-outline-success btn-rounded mb-1 mr-1">
+                                 <i class="fa fa-plus-circle"></i>
+                                 <strong class="mt-1 ms-1">Tạo mới</strong>
+                              </a>
+                              <!-- Button effect -->
+                              <!-- Button effect -->
+                              <a href="product-update.html" class="btn btn-outline-warning btn-rounded mb-1 mr-1">
+                                 <i class="fa fa-file"></i>
+                                 <strong class="mt-1 ms-1">Tải file</strong>
+                              </a>
+                              <!-- Button effect -->
+                              <!-- Button effect -->
+                              <a href="product-update.html" class="btn btn-outline-primary btn-rounded mb-1 mr-1">
+                                 <i class="fa fa-print"></i>
+                                 <strong class="mt-1 ms-1">In dữ liệu</strong>
+                              </a>
+                              <!-- Button effect -->
+                              <!-- Button effect -->
+                              <a href="product-update.html" class="btn btn-outline-info btn-rounded mb-1 mr-1">
+                                 <i class="fa fa-copy"></i>
+                                 <strong class="mt-1 ms-1">Sao chép</strong>
+                              </a>
+                              <!-- Button effect -->
+                              <!-- Button effect -->
+                              <a href="product-update.html" class="btn btn-outline-success btn-rounded mb-1 mr-1 p-2">
+                                 <i class="fa fa-file-excel-o"></i>
+                                 <strong class="mt-1 ms-1">Xuất Excel</strong>
+                              </a>
+                              <!-- Button effect -->
+                              <!-- Button effect -->
+                              <a href="product-update.html" class="btn btn-outline-danger btn-rounded mb-1 mr-1">
+                                 <i class="fa fa-file-pdf-o"></i>
+                                 <strong class="mt-1 ms-1">Xuất Pdf</strong>
+                              </a>
+                              <!-- Button effect -->
+                           </div>
                         </div>
                      </div>
                   </div>
                   <!-- Thân -->
-                  <div class="row mt-2">
-                     <div class="col-12 card">
-                        <div class="card-body">
-                           <div class="card-header row border-0" style="background-color: white;">
-                              <div class="col-md-2">
-                                 <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                       <label class="input-group-text bg-light border-0" for="inputGroupSelect01">Hiển
-                                          thị: </label>
+                  <div class="row card mt-2 border border-0">
+                     <div class="full inner_elements">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="tab_style2">
+                                 <div class="tabbar padding_infor_info">
+                                    <nav>
+                                       <div class="nav nav-tabs" id="nav-tab1" role="tablist">
+                                          <a class="nav-item nav-link active" id="nav-home-tab2" data-toggle="tab"
+                                             href="#nav-home_s2" role="tab" aria-controls="nav-home_s2"
+                                             aria-selected="true">Tất cả sản phẩm</a>
+                                          <a class="nav-item nav-link" id="nav-profile-tab2" data-toggle="tab"
+                                             href="#nav-profile_s2" role="tab" aria-controls="nav-profile_s2"
+                                             aria-selected="false">Đang chờ</a>
+                                          <a class="nav-item nav-link" id="nav-contact-tab2" data-toggle="tab"
+                                             href="#nav-contact_s2" role="tab" aria-controls="nav-contacts_s2"
+                                             aria-selected="false">Đang Giao Hàng</a>
+                                          <a class="nav-item nav-link" id="nav-contact-tab3" data-toggle="tab"
+                                             href="#nav-contact_s3" role="tab" aria-controls="nav-contacts_s2"
+                                             aria-selected="false">Hoàn Thành</a>
+                                          <a class="nav-item nav-link" id="nav-contact-tab4" data-toggle="tab"
+                                             href="#nav-contact_s4" role="tab" aria-controls="nav-contacts_s2"
+                                             aria-selected="false">Đã Hủy</a>
+                                       </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent_2">
+                                       <div class="tab-pane fade show active" id="nav-home_s2" role="tabpanel"
+                                          aria-labelledby="nav-home-tab">
+                                          <!-- Tất cả sản phẩm item -->
+                                          <div class="card-header row border-0" style="background-color: white;">
+                                             <div class="col-md-2">
+                                                <div class="input-group mb-3">
+                                                   <div class="input-group-prepend">
+                                                      <label class="input-group-text bg-light border-0"
+                                                         for="inputGroupSelect01">Hiển
+                                                         thị: </label>
+                                                   </div>
+                                                   <select class="custom-select" id="inputGroupSelect01">
+                                                      <option selected>5</option>
+                                                      <option value="1">10</option>
+                                                      <option value="2">15</option>
+                                                      <option value="3">20</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                             <div class="col-md-6 mb-1">
+                                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                                   placeholder="Tìm kiếm...">
+                                                <datalist id="datalistOptions">
+                                                   <option value="Xe đạp địa hình">
+                                                   <option value="Xe đạp lạ lùng">
+                                                </datalist>
+                                             </div>
+                                             <div class="col-md-2">
+                                                <select class="custom-select text-center" id="inputGroupSelect01">
+                                                   <option selected>---Sắp xếp theo---</option>
+                                                   <option value="1">Mã Đơn Hàng</option>
+                                                   <option value="2">Ngày Đặt</option>
+                                                   <option value="3">Trạng Thái</option>
+                                                </select>
+                                             </div>
+                                             <div class="col-md-2">
+                                                <select class="custom-select text-center" id="inputGroupSelect01">
+                                                   <option selected>---Thứ tự---</option>
+                                                   <option value="1">Tăng dần</option>
+                                                   <option value="2">Giảm dần</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="table-responsive">
+                                             <table class="table table-bordered align-middle">
+                                                <thead>
+                                                   <tr class="text-center bg-success">
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Mã Đơn Hàng
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Tên Khách Hàng
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Ngày Đặt
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Trạng thái
+
+                                                         </a>
+                                                      </th>
+                                                      <th class="text-white">Action</th>
+                                                   </tr>
+                                                </thead>
+
+                                                <tfoot>
+
+                                                </tfoot>
+
+                                                <tbody>
+                                                   <!-- Table item  -->
+                                                   <tr class="h6">
+                                                      <td>
+                                                         #SP00123
+                                                      </td>
+                                                      <td>
+                                                         Xe đạp nhưng không phải là xe đạp là như thế nào
+                                                      </td>
+                                                      <td>
+                                                         25/02/1994
+                                                      </td>
+                                                      <td>
+                                                         <p class="alert alert-success" role="alert">Hoàn Thành</p>
+                                                      </td>
+                                                      <td>
+                                                         <a class="btn btn-outline-success" href="#">
+                                                            <i class="fa fa-eye"></i>
+                                                         </a>
+                                                         <a href="product-update.html" class="btn btn-outline-primary">
+                                                            <i class="fa fa-edit"></i>
+                                                         </a>
+                                                         <a class="btn btn-outline-danger" href="#">
+                                                            <i class="fa fa-trash"></i>
+                                                         </a>
+                                                      </td>
+                                                   </tr>
+                                                   <!-- Table item  -->
+                                                </tbody>
+                                             </table>
+                                          </div>
+                                          <!-- List content footer -->
+                                          <div class="card-footer row mt-2 border-0" style="background-color: white;">
+                                             <nav aria-label="..." class="col-4">
+                                                <ul class="pagination">
+                                                   <li class="page-item">
+                                                      <a class="page-link" href="#">Trước</a>
+                                                   </li>
+                                                   <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                   <li class="page-item active" aria-current="page">
+                                                      <a class="page-link" href="#">2</a>
+                                                   </li>
+                                                   <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                   <li class="page-item">
+                                                      <a class="page-link" href="#">Tiếp</a>
+                                                   </li>
+                                                </ul>
+                                             </nav>
+                                             <div class="col-4"></div>
+                                             <div class="col-4 text-right text-dark">
+                                                <p>Đang xem 1 đến 10 trong tổng số 10 mục.</p>
+                                             </div>
+                                          </div>
+                                          <!-- List content footer end -->
+                                          <!-- Tất cả sản phẩm item -->
+                                       </div>
+                                       <div class="tab-pane fade" id="nav-profile_s2" role="tabpanel"
+                                          aria-labelledby="nav-profile-tab">
+                                          <!-- Danh sách sản phẩm mới nhất -->
+                                          <div class="card-header row border-0" style="background-color: white;">
+                                             <div class="col-md-2">
+                                                <div class="input-group mb-3">
+                                                   <div class="input-group-prepend">
+                                                      <label class="input-group-text bg-light border-0"
+                                                         for="inputGroupSelect01">Hiển
+                                                         thị: </label>
+                                                   </div>
+                                                   <select class="custom-select" id="inputGroupSelect01">
+                                                      <option selected>5</option>
+                                                      <option value="1">10</option>
+                                                      <option value="2">15</option>
+                                                      <option value="3">20</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                             <div class="col-md-6 mb-1">
+                                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                                   placeholder="Tìm kiếm...">
+                                                <datalist id="datalistOptions">
+                                                   <option value="Xe đạp địa hình">
+                                                   <option value="Xe đạp lạ lùng">
+                                                </datalist>
+                                             </div>
+                                             <div class="col-md-2">
+                                                <select class="custom-select text-center" id="inputGroupSelect01">
+                                                   <option selected>---Sắp xếp theo---</option>
+                                                   <option value="1">Mã Đơn Hàng</option>
+                                                   <option value="2">Ngày Đặt</option>
+                                                   <option value="3">Trạng Thái</option>
+                                                </select>
+                                             </div>
+                                             <div class="col-md-2">
+                                                <select class="custom-select text-center" id="inputGroupSelect01">
+                                                   <option selected>---Thứ tự---</option>
+                                                   <option value="1">Tăng dần</option>
+                                                   <option value="2">Giảm dần</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="table-responsive">
+                                             <table class="table table-bordered align-middle">
+                                                <thead>
+                                                   <tr class="text-center bg-success">
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Mã sản phẩm
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Tên sản phẩm
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Hình ảnh
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Số lượng
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Đơn giá
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Trạng thái
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Danh mục
+
+                                                         </a>
+                                                      </th>
+                                                      <th class="text-white">Action</th>
+                                                   </tr>
+                                                </thead>
+
+                                                <tfoot>
+
+                                                </tfoot>
+
+                                                <tbody>
+                                                   <!-- Table item  -->
+                                                   <tr class="h6">
+                                                      <td>
+                                                         #SP00123
+                                                      </td>
+                                                      <td>
+                                                         Xe đạp nhưng không phải là xe đạp là như thế nào
+                                                      </td>
+                                                      <td>
+                                                         <img src="https://wallpaperaccess.com/full/1754846.jpg"
+                                                            class="img-fuild" style="width: 72px;height: 72px;">
+                                                      </td>
+                                                      <td>
+                                                         1000
+                                                      </td>
+                                                      <td>
+                                                         1,200,000 VND
+                                                      </td>
+                                                      <td>
+                                                         <p class="alert alert-success" role="alert">Còn hàng</p>
+                                                      </td>
+                                                      <td>
+                                                         Xe đạp điện
+                                                      </td>
+                                                      <td>
+                                                         <a href="orders-update.html" class="btn btn-outline-primary">
+                                                            <i class="fa fa-edit"></i>
+                                                         </a>
+                                                         <a class="btn btn-outline-danger" href="#">
+                                                            <i class="fa fa-trash"></i>
+                                                         </a>
+                                                      </td>
+                                                   </tr>
+                                                   <!-- Table item  -->
+                                                </tbody>
+                                             </table>
+                                          </div>
+                                          <!-- List content footer -->
+                                          <div class="card-footer row mt-2 border-0" style="background-color: white;">
+                                             <nav aria-label="..." class="col-4">
+                                                <ul class="pagination">
+                                                   <li class="page-item">
+                                                      <a class="page-link" href="#">Trước</a>
+                                                   </li>
+                                                   <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                   <li class="page-item active" aria-current="page">
+                                                      <a class="page-link" href="#">2</a>
+                                                   </li>
+                                                   <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                   <li class="page-item">
+                                                      <a class="page-link" href="#">Tiếp</a>
+                                                   </li>
+                                                </ul>
+                                             </nav>
+                                             <div class="col-4"></div>
+                                             <div class="col-4 text-right text-dark">
+                                                <p>Đang xem 1 đến 10 trong tổng số 10 mục.</p>
+                                             </div>
+                                          </div>
+                                          <!-- Danh sách sản phẩm mới nhất -->
+                                       </div>
+                                       <div class="tab-pane fade" id="nav-contact_s2" role="tabpanel"
+                                          aria-labelledby="nav-contact-tab">
+                                          <!-- Danh sách sản phẩm sắp hết -->
+                                             <div class="card-header row border-0" style="background-color: white;">
+                                             <div class="col-md-2">
+                                                <div class="input-group mb-3">
+                                                   <div class="input-group-prepend">
+                                                      <label class="input-group-text bg-light border-0"
+                                                         for="inputGroupSelect01">Hiển
+                                                         thị: </label>
+                                                   </div>
+                                                   <select class="custom-select" id="inputGroupSelect01">
+                                                      <option selected>5</option>
+                                                      <option value="1">10</option>
+                                                      <option value="2">15</option>
+                                                      <option value="3">20</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                             <div class="col-md-6 mb-1">
+                                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                                   placeholder="Tìm kiếm...">
+                                                <datalist id="datalistOptions">
+                                                   <option value="Xe đạp địa hình">
+                                                   <option value="Xe đạp lạ lùng">
+                                                </datalist>
+                                             </div>
+                                             <div class="col-md-2">
+                                                <select class="custom-select text-center" id="inputGroupSelect01">
+                                                   <option selected>---Sắp xếp theo---</option>
+                                                   <option value="1">Mã sản phẩm</option>
+                                                   <option value="2">Tên sản phẩm</option>
+                                                   <option value="3">Số lượng</option>
+                                                </select>
+                                             </div>
+                                             <div class="col-md-2">
+                                                <select class="custom-select text-center" id="inputGroupSelect01">
+                                                   <option selected>---Thứ tự---</option>
+                                                   <option value="1">Tăng dần</option>
+                                                   <option value="2">Giảm dần</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="table-responsive">
+                                             <table class="table table-bordered align-middle">
+                                                <thead>
+                                                   <tr class="text-center bg-success">
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Mã sản phẩm
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Tên sản phẩm
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Hình ảnh
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Số lượng
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Đơn giá
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Trạng thái
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Danh mục
+
+                                                         </a>
+                                                      </th>
+                                                      <th class="text-white">Action</th>
+                                                   </tr>
+                                                </thead>
+
+                                                <tfoot>
+
+                                                </tfoot>
+
+                                                <tbody>
+                                                   <!-- Table item  -->
+                                                   <tr class="h6">
+                                                      <td>
+                                                         #SP00123
+                                                      </td>
+                                                      <td>
+                                                         Xe đạp nhưng không phải là xe đạp là như thế nào
+                                                      </td>
+                                                      <td>
+                                                         <img src="https://wallpaperaccess.com/full/1754846.jpg"
+                                                            class="img-fuild" style="width: 72px;height: 72px;">
+                                                      </td>
+                                                      <td>
+                                                         1000
+                                                      </td>
+                                                      <td>
+                                                         1,200,000 VND
+                                                      </td>
+                                                      <td>
+                                                         <p class="alert alert-success" role="alert">Còn hàng</p>
+                                                      </td>
+                                                      <td>
+                                                         Xe đạp điện
+                                                      </td>
+                                                      <td>
+                                                         <a href="orders-update.html" class="btn btn-outline-primary">
+                                                            <i class="fa fa-edit"></i>
+                                                         </a>
+                                                         <a class="btn btn-outline-danger" href="#">
+                                                            <i class="fa fa-trash"></i>
+                                                         </a>
+                                                      </td>
+                                                   </tr>
+                                                   <!-- Table item  -->
+                                                </tbody>
+                                             </table>
+                                          </div>
+                                          <!-- List content footer -->
+                                          <div class="card-footer row mt-2 border-0" style="background-color: white;">
+                                             <nav aria-label="..." class="col-4">
+                                                <ul class="pagination">
+                                                   <li class="page-item">
+                                                      <a class="page-link" href="#">Trước</a>
+                                                   </li>
+                                                   <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                   <li class="page-item active" aria-current="page">
+                                                      <a class="page-link" href="#">2</a>
+                                                   </li>
+                                                   <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                   <li class="page-item">
+                                                      <a class="page-link" href="#">Tiếp</a>
+                                                   </li>
+                                                </ul>
+                                             </nav>
+                                             <div class="col-4"></div>
+                                             <div class="col-4 text-right text-dark">
+                                                <p>Đang xem 1 đến 10 trong tổng số 10 mục.</p>
+                                             </div>
+                                          </div>
+                                          <!-- Danh sách sắp hết -->
+                                       </div>
+                                       <div class="tab-pane fade" id="nav-contact_s3" role="tabpanel"
+                                          aria-labelledby="nav-contact-tab">
+                                          <!-- Danh sách đánh giá -->
+                                             <div class="card-header row border-0" style="background-color: white;">
+                                             <div class="col-md-2">
+                                                <div class="input-group mb-3">
+                                                   <div class="input-group-prepend">
+                                                      <label class="input-group-text bg-light border-0"
+                                                         for="inputGroupSelect01">Hiển
+                                                         thị: </label>
+                                                   </div>
+                                                   <select class="custom-select" id="inputGroupSelect01">
+                                                      <option selected>5</option>
+                                                      <option value="1">10</option>
+                                                      <option value="2">15</option>
+                                                      <option value="3">20</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                             <div class="col-md-6 mb-1">
+                                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                                   placeholder="Tìm kiếm...">
+                                                <datalist id="datalistOptions">
+                                                   <option value="Xe đạp địa hình">
+                                                   <option value="Xe đạp lạ lùng">
+                                                </datalist>
+                                             </div>
+                                             <div class="col-md-2">
+                                                <select class="custom-select text-center" id="inputGroupSelect01">
+                                                   <option selected>---Sắp xếp theo---</option>
+                                                   <option value="1">Mã sản phẩm</option>
+                                                   <option value="2">Tên sản phẩm</option>
+                                                   <option value="3">Số lượng</option>
+                                                </select>
+                                             </div>
+                                             <div class="col-md-2">
+                                                <select class="custom-select text-center" id="inputGroupSelect01">
+                                                   <option selected>---Thứ tự---</option>
+                                                   <option value="1">Tăng dần</option>
+                                                   <option value="2">Giảm dần</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="table-responsive">
+                                             <table class="table table-bordered align-middle">
+                                                <thead>
+                                                   <tr class="text-center bg-success">
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Mã sản phẩm
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Tên sản phẩm
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Hình ảnh
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Số lượng
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Đơn giá
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Trạng thái
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Danh mục
+
+                                                         </a>
+                                                      </th>
+                                                      <th class="text-white">Action</th>
+                                                   </tr>
+                                                </thead>
+
+                                                <tfoot>
+
+                                                </tfoot>
+
+                                                <tbody>
+                                                   <!-- Table item  -->
+                                                   <tr class="h6">
+                                                      <td>
+                                                         #SP00123
+                                                      </td>
+                                                      <td>
+                                                         Xe đạp nhưng không phải là xe đạp là như thế nào
+                                                      </td>
+                                                      <td>
+                                                         <img src="https://wallpaperaccess.com/full/1754846.jpg"
+                                                            class="img-fuild" style="width: 72px;height: 72px;">
+                                                      </td>
+                                                      <td>
+                                                         1000
+                                                      </td>
+                                                      <td>
+                                                         1,200,000 VND
+                                                      </td>
+                                                      <td>
+                                                         <p class="alert alert-success" role="alert">Còn hàng</p>
+                                                      </td>
+                                                      <td>
+                                                         Xe đạp điện
+                                                      </td>
+                                                      <td>
+                                                         <a href="orders-update.html" class="btn btn-outline-primary">
+                                                            <i class="fa fa-edit"></i>
+                                                         </a>
+                                                         <a class="btn btn-outline-danger" href="#">
+                                                            <i class="fa fa-trash"></i>
+                                                         </a>
+                                                      </td>
+                                                   </tr>
+                                                   <!-- Table item  -->
+                                                </tbody>
+                                             </table>
+                                          </div>
+                                          <!-- List content footer -->
+                                          <div class="card-footer row mt-2 border-0" style="background-color: white;">
+                                             <nav aria-label="..." class="col-4">
+                                                <ul class="pagination">
+                                                   <li class="page-item">
+                                                      <a class="page-link" href="#">Trước</a>
+                                                   </li>
+                                                   <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                   <li class="page-item active" aria-current="page">
+                                                      <a class="page-link" href="#">2</a>
+                                                   </li>
+                                                   <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                   <li class="page-item">
+                                                      <a class="page-link" href="#">Tiếp</a>
+                                                   </li>
+                                                </ul>
+                                             </nav>
+                                             <div class="col-4"></div>
+                                             <div class="col-4 text-right text-dark">
+                                                <p>Đang xem 1 đến 10 trong tổng số 10 mục.</p>
+                                             </div>
+                                          </div>
+                                          <!-- Danh sách đánh giá -->
+                                       </div>
+                                       <div class="tab-pane fade" id="nav-contact_s4" role="tabpanel"
+                                          aria-labelledby="nav-contact-tab">
+                                          <!-- Danh sách lịch sử đổi giá -->
+                                             <div class="card-header row border-0" style="background-color: white;">
+                                             <div class="col-md-2">
+                                                <div class="input-group mb-3">
+                                                   <div class="input-group-prepend">
+                                                      <label class="input-group-text bg-light border-0"
+                                                         for="inputGroupSelect01">Hiển
+                                                         thị: </label>
+                                                   </div>
+                                                   <select class="custom-select" id="inputGroupSelect01">
+                                                      <option selected>5</option>
+                                                      <option value="1">10</option>
+                                                      <option value="2">15</option>
+                                                      <option value="3">20</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                             <div class="col-md-6 mb-1">
+                                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                                   placeholder="Tìm kiếm...">
+                                                <datalist id="datalistOptions">
+                                                   <option value="Xe đạp địa hình">
+                                                   <option value="Xe đạp lạ lùng">
+                                                </datalist>
+                                             </div>
+                                             <div class="col-md-2">
+                                                <select class="custom-select text-center" id="inputGroupSelect01">
+                                                   <option selected>---Sắp xếp theo---</option>
+                                                   <option value="1">Mã sản phẩm</option>
+                                                   <option value="2">Tên sản phẩm</option>
+                                                   <option value="3">Số lượng</option>
+                                                </select>
+                                             </div>
+                                             <div class="col-md-2">
+                                                <select class="custom-select text-center" id="inputGroupSelect01">
+                                                   <option selected>---Thứ tự---</option>
+                                                   <option value="1">Tăng dần</option>
+                                                   <option value="2">Giảm dần</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="table-responsive">
+                                             <table class="table table-bordered align-middle">
+                                                <thead>
+                                                   <tr class="text-center bg-success">
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Mã sản phẩm
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Tên sản phẩm
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Hình ảnh
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Số lượng
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Đơn giá
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Trạng thái
+
+                                                         </a>
+                                                      </th>
+                                                      <th>
+                                                         <a href="#" style="text-decoration: none;" class="text-white">
+
+                                                            Danh mục
+
+                                                         </a>
+                                                      </th>
+                                                      <th class="text-white">Action</th>
+                                                   </tr>
+                                                </thead>
+
+                                                <tfoot>
+
+                                                </tfoot>
+
+                                                <tbody>
+                                                   <!-- Table item  -->
+                                                   <tr class="h6">
+                                                      <td>
+                                                         #SP00123
+                                                      </td>
+                                                      <td>
+                                                         Xe đạp nhưng không phải là xe đạp là như thế nào
+                                                      </td>
+                                                      <td>
+                                                         <img src="https://wallpaperaccess.com/full/1754846.jpg"
+                                                            class="img-fuild" style="width: 72px;height: 72px;">
+                                                      </td>
+                                                      <td>
+                                                         1000
+                                                      </td>
+                                                      <td>
+                                                         1,200,000 VND
+                                                      </td>
+                                                      <td>
+                                                         <p class="alert alert-success" role="alert">Còn hàng</p>
+                                                      </td>
+                                                      <td>
+                                                         Xe đạp điện
+                                                      </td>
+                                                      <td>
+                                                         <a href="orders-update.html" class="btn btn-outline-primary">
+                                                            <i class="fa fa-edit"></i>
+                                                         </a>
+                                                         <a class="btn btn-outline-danger" href="#">
+                                                            <i class="fa fa-trash"></i>
+                                                         </a>
+                                                      </td>
+                                                   </tr>
+                                                   <!-- Table item  -->
+                                                </tbody>
+                                             </table>
+                                          </div>
+                                          <!-- List content footer -->
+                                          <div class="card-footer row mt-2 border-0" style="background-color: white;">
+                                             <nav aria-label="..." class="col-4">
+                                                <ul class="pagination">
+                                                   <li class="page-item">
+                                                      <a class="page-link" href="#">Trước</a>
+                                                   </li>
+                                                   <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                   <li class="page-item active" aria-current="page">
+                                                      <a class="page-link" href="#">2</a>
+                                                   </li>
+                                                   <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                   <li class="page-item">
+                                                      <a class="page-link" href="#">Tiếp</a>
+                                                   </li>
+                                                </ul>
+                                             </nav>
+                                             <div class="col-4"></div>
+                                             <div class="col-4 text-right text-dark">
+                                                <p>Đang xem 1 đến 10 trong tổng số 10 mục.</p>
+                                             </div>
+                                          </div>
+                                          <!-- Danh sách lịch sử đổi giá -->
+                                       </div>
                                     </div>
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                       <option selected>5</option>
-                                       <option value="1">10</option>
-                                       <option value="2">15</option>
-                                       <option value="3">20</option>
-                                    </select>
                                  </div>
                               </div>
-                              <div class="col-md-6 mb-1">
-                                 <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                    placeholder="Tìm kiếm...">
-                                 <datalist id="datalistOptions">
-                                    <option value="Xe đạp địa hình">
-                                    <option value="Xe đạp lạ lùng">
-                                 </datalist>
-                              </div>
-                              <div class="col-md-2">
-                                 <select class="custom-select text-center" id="inputGroupSelect01">
-                                    <option selected>---Sắp xếp theo---</option>
-                                    <option value="1">Họ tên</option>
-                                    <option value="2">Năm sinh</option>
-                                    <option value="3">Email</option>
-                                 </select>
-                              </div>
-                              <div class="col-md-2">
-                                 <select class="custom-select text-center" id="inputGroupSelect01">
-                                    <option selected>---Thứ tự---</option>
-                                    <option value="1">Tăng dần</option>
-                                    <option value="2">Giảm dần</option>
-                                 </select>
-                              </div>
                            </div>
-                           <div class="table-responsive">
-                              <table class="table table-bordered">
-                                 <thead>
-                                    <tr>
-                                       <th>
-                                          <a href="#" style="text-decoration: none;">
-                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
-                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
-                                             Tên đăng nhập
-                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
-                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
-                                          </a>
-                                       </th>
-                                       <th>
-                                          <a href="#" style="text-decoration: none;">
-                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
-                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
-                                             Tên đăng nhập
-                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
-                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
-                                          </a>
-                                       </th>
-                                       <th>
-                                          <a href="#" style="text-decoration: none;">
-                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
-                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
-                                             Tên đăng nhập
-                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
-                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
-                                          </a>
-                                       </th>
-                                       <th>
-                                          <a href="#" style="text-decoration: none;">
-                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
-                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
-                                             Tên đăng nhập
-                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
-                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
-                                          </a>
-                                       </th>
-                                   
-                                       <th>Action</th>
-                                    </tr>
-                                 </thead>
-
-                                 <tfoot>
-
-                                 </tfoot>
-
-                                 <tbody>
-                                    <tr>
-                                       <td></td>
-                                       <td></td>
-                                       <td></td>
-                                       <td></td>
-                                       <td>
-                                          <a href="#" class="btn btn-outline-primary">
-                                             <i class="fa fa-edit"></i>
-                                          </a>
-                                          <a class="btn btn-outline-danger" href="#">
-                                             <i class="fa fa-trash"></i>
-                                          </a>
-                                       </td>
-                                    </tr>
-
-                                 </tbody>
-                              </table>
-                           </div>
-                           <!-- List content footer -->
-                           <div class="card-footer row mt-2 border-0" style="background-color: white;">
-                              <nav aria-label="..." class="col-4">
-                                 <ul class="pagination">
-                                    <li class="page-item disabled">
-                                       <a class="page-link">Back</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item active" aria-current="page">
-                                       <a class="page-link" href="#">2</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                       <a class="page-link" href="#">Next</a>
-                                    </li>
-                                 </ul>
-                              </nav>
-                              <div class="col-4"></div>
-                              <div class="col-4 text-right text-dark">
-                                 <p>Đang xem 1 đến 10 trong tổng số 10 mục.</p>
-                              </div>
-
-                           </div>
-                           <!-- List content footer end -->
                         </div>
                      </div>
+
                   </div>
                   <!-- thân end -->
                </div>

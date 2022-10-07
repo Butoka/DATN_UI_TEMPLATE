@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Quản lý Voucher| DTNsBike</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- site icon -->
+   <link rel="icon" href="logo/icon2.png" type="image/png" />
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <!-- site css -->
+   <link rel="stylesheet" href="style.css" />
+   <!-- responsive css -->
+   <link rel="stylesheet" href="css/responsive.css" />
+   <!-- color css -->
+   <link rel="stylesheet" href="css/color_2.css" />
+   <!-- select bootstrap -->
+   <link rel="stylesheet" href="css/bootstrap-select.css" />
+   <!-- scrollbar css -->
+   <link rel="stylesheet" href="css/perfect-scrollbar.css" />
+   <!-- custom css -->
+   <link rel="stylesheet" href="css/custom.css" />
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body class="dashboard dashboard_2">
+   <div class="full_container">
+      <div class="inner_container">
+         <!-- Sidebar  -->
+
+         <!-- end sidebar -->
+         <!-- right content -->
+         <div id="content">
+            <!-- topbar -->
+
+
+            <!-- end topbar -->
+            <!-- dashboard inner -->
+            <div class="midde_cont">
+               <div class="container-fluid">
+                  <!-- Title -->
+                  <div class="row column_title">
+                     <div class="col-md-12">
+                        <div class="page_title">
+                           <h2>Danh sách Voucher</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Content -->
+                  <div class="row">
+                     <div class="col-12 card pt-2 pb-2 border-0">
+                        <div class="card-body p-2 text-end">
+                           <!-- Button effect -->
+                           <a href="voucher-update.html" class="btn btn-success btn-rounded text-white mb-1">
+                              <i class="fa fa-plus-circle"></i>
+                              <strong class="mt-1 ms-1">Tạo mới Voucher</strong>
+                           </a>
+                           <!-- Button effect -->
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Thân -->
+                  <div class="row mt-2">
+                     <div class="col-12 card">
+                        <div class="card-body">
+                           <div class="card-header row border-0" style="background-color: white;">
+                              <div class="col-md-2">
+                                 <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                       <label class="input-group-text bg-light border-0" for="inputGroupSelect01">Hiển
+                                          thị: </label>
+                                    </div>
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                       <option selected>5</option>
+                                       <option value="1">10</option>
+                                       <option value="2">15</option>
+                                       <option value="3">20</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-6 mb-1">
+                                 <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="Tìm kiếm...">
+                                 <datalist id="datalistOptions">
+                                    <option value="Xe đạp địa hình">
+                                    <option value="Xe đạp lạ lùng">
+                                 </datalist>
+                              </div>
+                              <div class="col-md-2">
+                                 <select class="custom-select text-center" id="inputGroupSelect01">
+                                    <option selected>---Sắp xếp theo---</option>
+                                    <option value="1">Ngày Tạo</option>
+                                    <option value="2">Giá Trị</option>
+                                    <option value="3">Hạn Sử dụng</option>
+                                 </select>
+                              </div>
+                              <div class="col-md-2">
+                                 <select class="custom-select text-center" id="inputGroupSelect01">
+                                    <option selected>---Thứ tự---</option>
+                                    <option value="1">Tăng dần</option>
+                                    <option value="2">Giảm dần</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="table-responsive">
+                              <table class="table table-bordered">
+                                 <thead>
+                                    <tr>
+                                       <th>
+                                          <a href="#" style="text-decoration: none;">
+                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
+                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
+                                             Mã Voucher
+                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
+                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
+                                          </a>
+                                       </th>
+                                       <th>
+                                          <a href="#" style="text-decoration: none;">
+                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
+                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
+                                             Ngày Tạo
+                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
+                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
+                                          </a>
+                                       </th>
+                                       <th>
+                                          <a href="#" style="text-decoration: none;">
+                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
+                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
+                                             Giá Trị
+                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
+                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
+                                          </a>
+                                       </th>
+                                       <th>
+                                          <a href="#" style="text-decoration: none;">
+                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
+                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
+                                             Hạn Sử Dụng
+                                             <i class="fa fa-long-arrow-down" style="font-size: 12px;"></i>
+                                             <i class="fa fa-long-arrow-up" style="font-size: 12px;"></i>
+                                          </a>
+                                       </th>
+                                   
+                                       <th>Action</th>
+                                    </tr>
+                                 </thead>
+
+                                 <tfoot>
+
+                                 </tfoot>
+
+                                 <tbody>
+                                    <tr>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td>
+                                          <a href="#" class="btn btn-outline-primary">
+                                             <i class="fa fa-edit"></i>
+                                          </a>
+                                          <a class="btn btn-outline-danger" href="#">
+                                             <i class="fa fa-trash"></i>
+                                          </a>
+                                       </td>
+                                    </tr>
+
+                                 </tbody>
+                              </table>
+                           </div>
+                           <!-- List content footer -->
+                           <div class="card-footer row mt-2 border-0" style="background-color: white;">
+                              <nav aria-label="..." class="col-4">
+                                 <ul class="pagination">
+                                    <li class="page-item disabled">
+                                       <a class="page-link">Back</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item active" aria-current="page">
+                                       <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                       <a class="page-link" href="#">Next</a>
+                                    </li>
+                                 </ul>
+                              </nav>
+                              <div class="col-4"></div>
+                              <div class="col-4 text-right text-dark">
+                                 <p>Đang xem 1 đến 10 trong tổng số 10 mục.</p>
+                              </div>
+
+                           </div>
+                           <!-- List content footer end -->
+                        </div>
+                     </div>
+                  </div>
+                  <!-- thân end -->
+               </div>
+               <!-- footer -->
+            </div>
+            <!-- end dashboard inner -->
+         </div>
+      </div>
+   </div>
+   <!-- jQuery -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <!-- wow animation -->
+   <script src="js/animate.js"></script>
+   <!-- select country -->
+   <script src="js/bootstrap-select.js"></script>
+   <!-- owl carousel -->
+   <script src="js/owl.carousel.js"></script>
+   <!-- chart js -->
+   <script src="js/Chart.min.js"></script>
+   <script src="js/Chart.bundle.min.js"></script>
+   <script src="js/utils.js"></script>
+   <script src="js/analyser.js"></script>
+   <!-- nice scrollbar -->
+   <script src="js/perfect-scrollbar.min.js"></script>
+   <script>
+      var ps = new PerfectScrollbar('#sidebar');
+   </script>
+   <!-- custom js -->
+   <script src="js/custom.js"></script>
+   <script src="js/chart_custom_style2.js"></script>
+</body>
+
+</html>
