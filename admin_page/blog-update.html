@@ -34,7 +34,14 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
    <!-- ckeditor -->
-   <script src="https://cdn.ckeditor.com/4.20.0/standard/ckeditor.js"></script>
+   <script src="https://cdn.ckeditor.com/ckeditor5/35.2.0/decoupled-document/ckeditor.js"></script>
+   <!-- checkbox -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+   <style>
+      .editor1 .ck-editor__editable_inline {
+         min-height: 300px;
+      }
+   </style>
 </head>
 
 <body class="dashboard dashboard_2">
@@ -108,59 +115,64 @@
                                  <div class="mb-3 col-12">
                                     <label for="exampleInputConfirmPass" class="form-label h6"><span
                                           class="text-danger">*</span> Hiển thị</label>
-                                   <select class="custom-select" id="inputGroupSelect01">
+                                    <select class="custom-select" id="inputGroupSelect01">
                                        <option selected>--Chọn chế độ hiển thị--</option>
                                        <option value="1">Công khai</option>
                                        <option value="2">Riêng tư</option>
                                     </select>
                                  </div>
                                  <!-- Form item input -->
-                                   <!-- Form item input -->
+                                 <!-- Form item input -->
                                  <div class="mb-3 col-12">
                                     <label for="exampleInputConfirmPass" class="form-label h6"><span
                                           class="text-danger">*</span> Đăng</label>
-                                   <select class="custom-select" id="inputGroupSelect01">
+                                    <select class="custom-select" id="inputGroupSelect01">
                                        <option selected>--Chọn thời gian đăng bài--</option>
                                        <option value="1">Ngay</option>
                                        <option value="2">Ngày mai</option>
                                     </select>
                                  </div>
                                  <!-- Form item input -->
-                                  <!-- Form item input -->
+                                 <!-- Form item input -->
                                  <div class="mb-3 col-12">
-                                   <!-- Form checkbok item -->
-                                   <div class="form-check form-check-inline ml-3">
-                                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                      <label class="form-check-label h6" for="inlineCheckbox1">Giữ trên cùng bài viết.</label>
+                                    <!-- Form checkbok item -->
+                                    <div class="form-check form-check-inline ml-3">
+                                       <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                          value="option1">
+                                       <label class="form-check-label h6" for="inlineCheckbox1">Giữ trên cùng bài
+                                          viết.</label>
                                     </div>
                                     <!-- Form checkbok item -->
                                     <!-- Form checkbok item -->
-                                   <div class="form-check form-check-inline ml-3">
-                                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
-                                      <label class="form-check-label h6" for="inlineCheckbox2">Chờ duyệt</label>
+                                    <div class="form-check form-check-inline ml-3">
+                                       <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                          value="option1">
+                                       <label class="form-check-label h6" for="inlineCheckbox2">Chờ duyệt</label>
                                     </div>
                                     <!-- Form checkbok item -->
                                  </div>
                                  <!-- Form item input -->
-                                 
-                              <!-- Form item input -->
+
+                                 <!-- Form item input -->
                                  <div class="mb-3 col-12">
                                     <label for="exampleInputConfirmPass" class="form-label h6"><span
                                           class="text-danger">*</span>Mô tả ngắn</label>
-                                    <input type="text" name="editor2">  
+                                          <input type="text" class="form-control" id="exampleInputID"
+                                          aria-describedby="emailHelp" placeholder="Nhập mô tả ngắn...">
                                  </div>
-                              <!-- Form item input -->
                                  <!-- Form item input -->
-                                 <div class="mb-3 col-12">
+                                 <!-- Form item input -->
+                                 <div class="mb-3 col-12 editor1">
                                     <label for="exampleInputConfirmPass" class="form-label h6"><span
-                                          class="text-danger">*</span>Mô tả chi tiết</label>
-                                    <textarea name="editor1"></textarea>
+                                          class="text-danger">*</span>Nội dung chi tiết</label>
+                                    <div id="toolbar-container"></div>
+                                    <div id="editor" class="border"></div>
                                  </div>
                               </div>
                               <!-- Form item input -->
                               <div class="mb-3 col-4">
-                                  <div class="row">
-                                       <div class="col-12 text-center mt-2 mb-3">
+                                 <div class="row">
+                                    <div class="col-12 text-center mt-2 mb-3">
                                        <button type="submit" class="btn btn-success">
                                           <i class="fa fa-save"></i>
                                           Lưu lại
@@ -172,8 +184,8 @@
                                        <button class="btn btn-danger" formaction="blog-list.html">
                                           <i class="fa fa-cancel"></i>
                                           Hủy bỏ</button>
+                                    </div>
                                  </div>
-                                  </div>
                                  <div for="exampleInputConfirmPass" class="form-label h6"><span
                                        class="text-danger">*</span> Ảnh đại diện</div>
                                  <div>
@@ -188,7 +200,7 @@
                                  <div for="exampleInputConfirmPass" class="form-label h6"><span
                                        class="text-danger">*</span> Ảnh bổ sung cho bài viết</div>
                                  <div class="row">
-                                     <label class="mt-2 col-4">
+                                    <label class="mt-2 col-4">
                                        <img src="images/img-add.png" class="img-thumbnail">
                                        <input type="file" name="file" hidden>
                                     </label>
@@ -215,9 +227,16 @@
    </div>
 
    <script>
-      CKEDITOR.replace('editor1');
-      CKEDITOR.replace('editor2');
-   </script>
+      DecoupledEditor
+       .create(document.querySelector('#editor'))
+       .then(editor => {
+          const toolbarContainer = document.querySelector('#toolbar-container');
+          toolbarContainer.appendChild(editor.ui.view.toolbar.element);
+       })
+       .catch(error => {
+          console.error(error);
+       });
+ </script>
    <!-- jQuery -->
    <script src="js/jquery.min.js"></script>
    <script src="js/popper.min.js"></script>

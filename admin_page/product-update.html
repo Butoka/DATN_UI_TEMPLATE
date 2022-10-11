@@ -34,7 +34,14 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
    <!-- ckeditor -->
-   <script src="https://cdn.ckeditor.com/4.20.0/standard/ckeditor.js"></script>
+   <script src="https://cdn.ckeditor.com/ckeditor5/35.2.0/classic/ckeditor.js"></script>
+   <!-- checkbox -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+   <style>
+      .ck-editor__editable_inline {
+         min-height: 300px;
+      }
+   </style>
 </head>
 
 <body class="dashboard dashboard_2">
@@ -76,7 +83,7 @@
                               <strong class="mt-1 ms-1">Thêm danh mục</strong>
                            </a>
                            <!-- Button effect -->
-                            <!-- Button effect -->
+                           <!-- Button effect -->
                            <a href="brand-update.html" class="btn btn-dark btn-rounded text-white mb-1">
                               <i class="fa fa-plus-circle"></i>
                               <strong class="mt-1 ms-1">Thêm thương hiệu</strong>
@@ -126,7 +133,8 @@
                                     <label for="exampleInputAddress" class="form-label h6"><span
                                           class="text-danger">*</span> Số lượng</label>
                                     <input type="number" class="form-control" id="exampleInputAddress"
-                                       aria-describedby="emailHelp" placeholder="Nhập số lượng..." value="0" min="0" max="999999999">
+                                       aria-describedby="emailHelp" placeholder="Nhập số lượng..." value="0" min="0"
+                                       max="999999999">
                                  </div>
                                  <!-- Form item input -->
                                  <!-- Form item input -->
@@ -134,23 +142,24 @@
                                     <label for="exampleInputPhone" class="form-label h6"><span
                                           class="text-danger">*</span> Giá nhập</label>
                                     <input type="number" class="form-control" id="exampleInputPhone"
-                                       aria-describedby="emailHelp" placeholder="Nhập giá nhập..." value="0" min="0" max="999999999">
+                                       aria-describedby="emailHelp" placeholder="Nhập giá nhập..." value="0" min="0"
+                                       max="999999999">
                                  </div>
                                  <!-- Form item input -->
                                  <!-- Form item input -->
                                  <div class="mb-3 col-4">
                                     <label for="exampleInputBirth" class="form-label h6"><span
                                           class="text-danger">*</span> Giá bán</label>
-                                    <input type="number" class="form-control" id="exampleInputBirth" min="0" max="99999999" value="0" 
-                                       aria-describedby="emailHelp">
+                                    <input type="number" class="form-control" id="exampleInputBirth" min="0"
+                                       max="99999999" value="0" aria-describedby="emailHelp">
                                  </div>
                                  <!-- Form item input -->
                                  <!-- Form item input -->
                                  <div class="mb-3 col-4">
                                     <label for="exampleInputBirth" class="form-label h6"><span
                                           class="text-danger">*</span> Giá giảm</label>
-                                    <input type="number" class="form-control" id="exampleInputBirth" min="0" max="99999999" value="0" 
-                                       aria-describedby="emailHelp">
+                                    <input type="number" class="form-control" id="exampleInputBirth" min="0"
+                                       max="99999999" value="0" aria-describedby="emailHelp">
                                  </div>
                                  <!-- Form item input -->
                                  <!-- Form item input -->
@@ -165,41 +174,53 @@
                                  <div class="mb-3 col-4">
                                     <label for="exampleInputConfirmPass" class="form-label h6"><span
                                           class="text-danger">*</span> Trạng thái</label>
-                                   <select class="custom-select" id="inputGroupSelect01">
+                                    <select class="custom-select" id="inputGroupSelect01">
                                        <option selected>--Chọn trạng thái--</option>
                                        <option value="1">Còn hàng</option>
                                        <option value="2">Hết hàng</option>
                                     </select>
                                  </div>
                                  <!-- Form item input -->
-                                  <!-- Form item input -->
+                                 <!-- Form item input -->
                                  <div class="mb-3 col-4">
                                     <div>
                                        <label for="exampleInputConfirmPass" class="form-label h6"><span
-                                          class="text-danger">*</span> Kích thước</label>
+                                             class="text-danger">*</span> Kích thước</label>
                                     </div>
-                                   <!-- Form checkbok item -->
-                                   <div class="form-check form-check-inline ml-3">
-                                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                      <label class="form-check-label h5" for="inlineCheckbox1">SIZE L</label>
+                                    <!-- Form checkbok item -->
+                                    <div class="pretty p-icon p-smooth ml-3">
+                                       <input type="checkbox" />
+                                       <div class="state p-success">
+                                          <i class="icon fa fa-check"></i>
+                                          <label>SIZE L</label>
+                                       </div>
+                                    </div>
+                                    <!-- Form checkbok item -->
+                                    <!-- Form checkbok item -->
+                                    <div class="pretty p-icon p-smooth ml-3">
+                                       <input type="checkbox" />
+                                       <div class="state p-success">
+                                          <i class="icon fa fa-check"></i>
+                                          <label>SIZE XL</label>
+                                       </div>
                                     </div>
                                     <!-- Form checkbok item -->
                                     <!-- Form checkbok item -->
-                                   <div class="form-check form-check-inline ml-3">
-                                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
-                                      <label class="form-check-label h5" for="inlineCheckbox2">SIZE M</label>
+                                    <div class="pretty p-icon p-smooth ml-3">
+                                       <input type="checkbox" />
+                                       <div class="state p-success">
+                                          <i class="icon fa fa-check"></i>
+                                          <label>SIZE XXL</label>
+                                       </div>
                                     </div>
                                     <!-- Form checkbok item -->
-                                     <!-- Form checkbok item -->
-                                   <div class="form-check form-check-inline ml-3">
-                                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
-                                      <label class="form-check-label h5" for="inlineCheckbox3">SIZE XL</label>
-                                    </div>
                                     <!-- Form checkbok item -->
-                                     <!-- Form checkbok item -->
-                                   <div class="form-check form-check-inline ml-3">
-                                      <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
-                                      <label class="form-check-label h5" for="inlineCheckbox4">SIZE XXL</label>
+                                    <div class="pretty p-icon p-smooth ml-3">
+                                       <input type="checkbox" />
+                                       <div class="state p-success">
+                                          <i class="icon fa fa-check"></i>
+                                          <label>SIZE SM</label>
+                                       </div>
                                     </div>
                                     <!-- Form checkbok item -->
                                  </div>
@@ -208,32 +229,47 @@
                                  <div class="mb-3 col-4">
                                     <div>
                                        <label for="exampleInputConfirmPass" class="form-label h6"><span
-                                          class="text-danger">*</span> Màu sắc</label>
+                                             class="text-danger">*</span> Màu sắc</label>
                                     </div>
                                     <!-- Form checkbok item -->
-                                   <div class="form-check form-check-inline ml-3">
-                                      <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option1">
-                                      <label class="form-check-label h5" for="inlineCheckbox8">XANH </label>
+                                    <div class="pretty p-default p-thick p-pulse ml-3">
+                                       <input type="checkbox" />
+                                       <div class="state p-warning-o">
+                                          <label>Xanh</label>
+                                       </div>
                                     </div>
                                     <!-- Form checkbok item -->
                                     <!-- Form checkbok item -->
-                                   <div class="form-check form-check-inline ml-3">
-                                      <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option1">
-                                      <label class="form-check-label h5" for="inlineCheckbox7">ĐỎ</label>
+                                    <div class="pretty p-default p-thick p-pulse ml-3">
+                                       <input type="checkbox" />
+                                       <div class="state p-warning-o">
+                                          <label>Đỏ</label>
+                                       </div>
                                     </div>
                                     <!-- Form checkbok item -->
-                                     <!-- Form checkbok item -->
-                                   <div class="form-check form-check-inline ml-3">
-                                      <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option1">
-                                      <label class="form-check-label h5" for="inlineCheckbox6">TÍM VÀNG</label>
+                                    <!-- Form checkbok item -->
+                                    <div class="pretty p-default p-thick p-pulse ml-3">
+                                       <input type="checkbox" />
+                                       <div class="state p-warning-o">
+                                          <label>Tím</label>
+                                       </div>
                                     </div>
                                     <!-- Form checkbok item -->
+                                    <!-- Form checkbok item -->
+                                    <div class="pretty p-default p-thick p-pulse ml-3">
+                                       <input type="checkbox" />
+                                       <div class="state p-warning-o">
+                                          <label>Tím vàng</label>
+                                       </div>
+                                    </div>
+                                    <!-- Form checkbok item -->
+
                                  </div>
                                  <!-- Form item input -->
                                  <div class="mb-3 col-12">
                                     <label for="exampleInputConfirmPass" class="form-label h6"><span
                                           class="text-danger">*</span>Mô tả sản phẩm</label>
-                                    <textarea name="editor1"></textarea>
+                                    <textarea id="editor1" placeholder="Nhập mô tả sản phẩm ...."></textarea>
                                  </div>
                               </div>
 
@@ -254,7 +290,7 @@
                                  <div for="exampleInputConfirmPass" class="form-label h6"><span
                                        class="text-danger">*</span> Ảnh sản phẩm bổ sung</div>
                                  <div class="row">
-                                     <label class="mt-2 col-4">
+                                    <label class="mt-2 col-4">
                                        <img src="images/img-add.png" class="img-thumbnail">
                                        <input type="file" name="file" hidden>
                                     </label>
@@ -266,13 +302,13 @@
                                  </div>
 
                                  <div class="col-12 text-center mt-2">
-                                       <button type="submit" class="btn btn-success">
-                                          <i class="fa fa-save"></i>
-                                          Lưu lại
-                                       </button>
-                                       <button class="btn btn-danger" formaction="product-list.html">
-                                          <i class="fa fa-cancel"></i>
-                                          Hủy bỏ</button>
+                                    <button type="submit" class="btn btn-success">
+                                       <i class="fa fa-save"></i>
+                                       Lưu lại
+                                    </button>
+                                    <button class="btn btn-danger" formaction="product-list.html">
+                                       <i class="fa fa-cancel"></i>
+                                       Hủy bỏ</button>
                                  </div>
                               </div>
                               <!-- Form item input -->
@@ -290,7 +326,11 @@
    </div>
 
    <script>
-      CKEDITOR.replace('editor1');
+      ClassicEditor
+         .create(document.querySelector('#editor1'))
+         .catch(error => {
+            console.error(error);
+         });
    </script>
    <!-- jQuery -->
    <script src="js/jquery.min.js"></script>
